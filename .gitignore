@@ -1,0 +1,26 @@
+# 构建产物与运行数据（不进仓库）
+dist/
+build_pyi*/
+*.exe
+*.spec.bak
+config.json
+selftest.txt
+
+# Python
+__pycache__/
+*.pyc
+
+# 备份与本地数据
+backup/
+*.sav
+*.log
+
+# 第三方工具与游戏原始文件（版权数据，不入库）
+tools/
+origin/
+sources/
+*.pak
+
+# 临时产物
+*.png
+*.log

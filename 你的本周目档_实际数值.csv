@@ -1,0 +1,50 @@
+﻿单位(中),单位(英),微调属性,存档字段,你的点数,每点效果,累计加成,数据表行名,基础值,生效值
+切叶蚁中工,Leafcutter ant media,普攻伤害,LeafcutterMediaAttackDamageImprovment,85,每点 +0.05,+4.25,LeafcutterMedia1,4.5,8.75
+切叶蚁中工,Leafcutter ant media,普攻伤害,LeafcutterMediaAttackDamageImprovment,85,每点 +0.05,+4.25,LeafcutterMedia2,6,10.25
+切叶蚁中工,Leafcutter ant media,普攻伤害,LeafcutterMediaAttackDamageImprovment,85,每点 +0.05,+4.25,LeafcutterMedia3,7,11.25
+木蚁射手,Wood ant shooter,酸液攻速,WoodAntAttackSpeedImprovment,30,每点 +0.4%,+12%,-,-,+12%
+木蚁兵（近战型）,Wood ant soldier,生命,WoodAntMeleeHealthImprovment,30,每点 +1,+30,WoodAntMelee1,85,115
+木蚁兵（近战型）,Wood ant soldier,生命,WoodAntMeleeHealthImprovment,30,每点 +1,+30,WoodAntMelee2,100,130
+木蚁兵（近战型）,Wood ant soldier,生命,WoodAntMeleeHealthImprovment,30,每点 +1,+30,WoodAntMelee3,120,150
+黑蚁兵,Black ant soldier,普攻伤害,BlackAntAttackImprovment,22,每点 +0.05,+1.1,BlackAnt1,3.6,4.7
+黑蚁兵,Black ant soldier,普攻伤害,BlackAntAttackImprovment,22,每点 +0.05,+1.1,BlackAnt2,4.4,5.5
+黑蚁兵,Black ant soldier,普攻伤害,BlackAntAttackImprovment,22,每点 +0.05,+1.1,BlackAnt3,4.4,5.5
+蚁后,Queen,技能冷却,QueenCDImprovment,20,每点 -0.5 秒,-10,-,-,-10
+切叶蚁大工,Leafcutter ant major,生命,LeafcutterHealthImprovment,20,每点 +1,+20,LeafcutterMajorTaunt1,200,220
+切叶蚁大工,Leafcutter ant major,生命,LeafcutterHealthImprovment,20,每点 +1,+20,LeafcutterMajorTaunt2,240,260
+切叶蚁大工,Leafcutter ant major,生命,LeafcutterHealthImprovment,20,每点 +1,+20,LeafcutterMajorTaunt3,400,420
+子弹蚁兵,Bullet ant soldier,穿刺,BulletAntPiercingImprovment,20,每点 +0.5%,+10%,BulletAnt1,0,0.1
+子弹蚁兵,Bullet ant soldier,穿刺,BulletAntPiercingImprovment,20,每点 +0.5%,+10%,BulletAnt2,0,0.1
+子弹蚁兵,Bullet ant soldier,穿刺,BulletAntPiercingImprovment,20,每点 +0.5%,+10%,BulletAnt3,0,0.1
+黑蚁兵,Black ant soldier,穿刺,BlackAntPiercingImprovment,10,每点 +0.5%,+5%,BlackAnt1,0,0.05
+黑蚁兵,Black ant soldier,穿刺,BlackAntPiercingImprovment,10,每点 +0.5%,+5%,BlackAnt2,0,0.05
+黑蚁兵,Black ant soldier,穿刺,BlackAntPiercingImprovment,10,每点 +0.5%,+5%,BlackAnt3,0,0.05
+木蚁射手,Wood ant shooter,酸液伤害,WoodAntAttackDamageImprovment,10,每点 +0.08（迫击）/ +0.02（速射）,+0.8 / +0.2,-,-,+0.8 / +0.2
+切叶蚁大工,Leafcutter ant major,物理抗性,LeafcutterPhysicalResImprovment,10,每点 +0.5%,+5%,LeafcutterMajorTaunt1,0,0.05
+切叶蚁大工,Leafcutter ant major,物理抗性,LeafcutterPhysicalResImprovment,10,每点 +0.5%,+5%,LeafcutterMajorTaunt2,0,0.05
+切叶蚁大工,Leafcutter ant major,物理抗性,LeafcutterPhysicalResImprovment,10,每点 +0.5%,+5%,LeafcutterMajorTaunt3,0,0.05
+马塔贝勒医疗蚁,Matabele ant medic,移动速度,MatabeleAntMovementSpeedImprovment,10,每点 +2,+20,MatabeleMedicAnesthetist1,320,340
+马塔贝勒医疗蚁,Matabele ant medic,移动速度,MatabeleAntMovementSpeedImprovment,10,每点 +2,+20,MatabeleMedicAnesthetist2,320,340
+马塔贝勒医疗蚁,Matabele ant medic,移动速度,MatabeleAntMovementSpeedImprovment,10,每点 +2,+20,MatabeleMedicAnesthetist3,320,340
+马塔贝勒医疗蚁,Matabele ant medic,骑乘伤害,MatabeleAntAttackDamageImprovment,10,每点 +0.05,+0.5,-,-,+0.5
+马塔贝勒医疗蚁,Matabele ant medic,物理抗性,MatabeleAntPhysicalResistanceImprovment,10,每点 +0.5%,+5%,MatabeleMedicAnesthetist1,0,0.05
+马塔贝勒医疗蚁,Matabele ant medic,物理抗性,MatabeleAntPhysicalResistanceImprovment,10,每点 +0.5%,+5%,MatabeleMedicAnesthetist2,0,0.05
+马塔贝勒医疗蚁,Matabele ant medic,物理抗性,MatabeleAntPhysicalResistanceImprovment,10,每点 +0.5%,+5%,MatabeleMedicAnesthetist3,0,0.05
+
+NewGamePlusLevel,1
+适应性已启用,bBlackAntDangerous
+适应性已启用,bBlackAntSelfPreservation
+适应性已启用,bBulletAntLeanPupation
+适应性已启用,bBulletAntReinforcedCarapace
+适应性已启用,bFireAntLastLaugh
+适应性已启用,bFireAntSurefooted
+适应性已启用,bGeneTheifQueenFierceMother
+适应性已启用,bGeneTheifQueenStrongCarpiece
+适应性已启用,bGeneTheifWorkerEfficientBrood
+适应性已启用,bGeneTheifWorkerStrongMandibles
+适应性已启用,bLeafcutterSharp
+适应性已启用,bLeafcutterShockProof
+适应性已启用,bMatabeleAntFieldMedic
+适应性已启用,bMatabeleAntSustain
+适应性已启用,bWoodAntCrippling
+适应性已启用,bWoodAntHighPressure

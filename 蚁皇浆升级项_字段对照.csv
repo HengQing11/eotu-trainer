@@ -1,0 +1,114 @@
+﻿单位(中),单位(英),类别,项目名,蚁皇浆花费,类型,效果,存档字段名,字段类型,值域
+蚁后,Queen,适应性(4选2),Second wind 二次风,50,Ability,血量降到 75% 时触发：无敌 30 秒，5 秒内回复 300 HP。冷却 300,bGeneTheifQueenSecondWind,BoolProperty,true / false
+蚁后,Queen,适应性(4选2),Fierce mother 狂暴母体,50,Ability,血量降到 75% 时触发：半径 2600 内敌人混乱 10 秒。冷却 300,bGeneTheifQueenFierceMother,BoolProperty,true / false
+蚁后,Queen,适应性(4选2),（wiki 名：Royal guard 皇家卫兵）,100,Ability,血量降到 75% 时触发：每个蚁后房间立刻产出 2 只皇家卫兵、仅存活 60 秒；5 秒内产卵不需食物与工蚁。冷却 300,bGeneTheifQueenStrongCarpiece,BoolProperty,true / false
+蚁后,Queen,适应性(4选2),（wiki 名：Royal decree 皇家敕令）,100,Ability,血量降到 75% 时触发：20 秒内产卵不需食物与工蚁。冷却 300,bGeneTheifQueenResistantCarpiece,BoolProperty,true / false
+蚁后,Queen,属性微调(IP),生命,每次×1.15,-,每点 +10,QueenHealthImprovment,IntProperty,0 ~ 上限
+蚁后,Queen,属性微调(IP),技能冷却,每次×1.15,-,每点 -0.5 秒,QueenCDImprovment,IntProperty,0 ~ 上限
+工蚁,Worker,适应性(4选2),Nimble 敏捷,30,Stat,脱战闪避 +60%；被发现的距离更短；脱战时不显示在小地图与血条上,bGeneTheifWorkerStrongMandibles,BoolProperty,true / false
+工蚁,Worker,适应性(4选2),Defensive 防御,30,Stat,单次最大受伤 20；物理抗性 +20%；毒抗 +20%,bGeneTheifWorkerStrongCarpiece,BoolProperty,true / false
+工蚁,Worker,适应性(4选2),Aggressive brood 好斗虫群,40,Stat,普攻伤害 +200%,bGeneTheifWorkerAggressiveBrood,BoolProperty,true / false
+工蚁,Worker,适应性(4选2),Efficient brood 高效虫群,40,Stat,移速 +40；搬运量 +10；工作完成速度 +2；走在非高速通道上不受减速与毒素影响,bGeneTheifWorkerEfficientBrood,BoolProperty,true / false
+工蚁,Worker,属性微调(IP),移动速度,每次×1.15,-,每点 +2,WorkerSpeedImprovment,IntProperty,0 ~ 上限
+工蚁,Worker,属性微调(IP),搬运量,每次×1.15,-,每点 +0.4,WorkerHarvestImprovment,IntProperty,0 ~ 上限
+工蚁,Worker,等级上限,WorkerMaxUpgradeLevel,-,-,该单位可买到的最多级数,WorkerMaxUpgradeLevel,IntProperty,0 ~ 上限
+黑蚁兵,Black ant soldier,适应性(4选2),Dangerous 危险,50,Stat,普攻攻速 +20%,bBlackAntDangerous,BoolProperty,true / false
+黑蚁兵,Black ant soldier,适应性(4选2),Meat wall 肉盾,50,Stat,物理抗性 +50%,bBlackAntMeatWall,BoolProperty,true / false
+黑蚁兵,Black ant soldier,适应性(4选2),Self preservation 自保,70,Ability,血量降到 40% 时触发：脱离战斗 0.5 秒,bBlackAntSelfPreservation,BoolProperty,true / false
+黑蚁兵,Black ant soldier,适应性(4选2),Self repair 自修,70,Stat,治疗速度 +4,bBlackAntSelfRepair,BoolProperty,true / false
+黑蚁兵,Black ant soldier,属性微调(IP),生命,每次×1.15,-,每点 +0.7,BlackAntHealthImprovment,IntProperty,0 ~ 上限
+黑蚁兵,Black ant soldier,属性微调(IP),护甲,每次×1.15,-,每点 +0.1,BlackAntArmourImprovment,IntProperty,0 ~ 上限
+黑蚁兵,Black ant soldier,属性微调(IP),穿刺,每次×1.15,-,每点 +0.5%,BlackAntPiercingImprovment,IntProperty,0 ~ 上限
+黑蚁兵,Black ant soldier,属性微调(IP),普攻伤害,每次×1.15,-,每点 +0.05,BlackAntAttackImprovment,IntProperty,0 ~ 上限
+黑蚁兵,Black ant soldier,等级上限,BlackAntMaxUpgradeLevel,-,-,该单位可买到的最多级数,BlackAntMaxUpgradeLevel,IntProperty,0 ~ 上限
+木蚁射手,Wood ant shooter,适应性(4选2),Corrosive 腐蚀,80,Effect,酸液额外造成毒伤：迫击型每 0.1 秒 1.2、持续 0.5 秒；速射型每 0.1 秒 0.2,bWoodAntCorrosive,BoolProperty,true / false
+木蚁射手,Wood ant shooter,适应性(4选2),High pressure 高压,80,Effect,酸液额外物理伤害：迫击型 +4.5；速射型 +0.75,bWoodAntHighPressure,BoolProperty,true / false
+木蚁射手,Wood ant shooter,适应性(4选2),Crippling 致残,100,Effect,目标受到的物理伤害 +40%（迫击 1.5 秒 / 速射 0.4 秒）；可叠加至 +100%,bWoodAntCrippling,BoolProperty,true / false
+木蚁射手,Wood ant shooter,适应性(4选2),Weakening 弱化,100,Effect,目标受到的毒伤 +40%（迫击 1.5 秒 / 速射 0.4 秒）；可叠加至 +100%,bWoodAntWeakening,BoolProperty,true / false
+木蚁射手,Wood ant shooter,属性微调(IP),生命,每次×1.15,-,每点 +0.5,WoodAntHealthImprovment,IntProperty,0 ~ 上限
+木蚁射手,Wood ant shooter,属性微调(IP),射程,每次×1.15,-,每点 +2,WoodAntRangeImprovment,IntProperty,0 ~ 上限
+木蚁射手,Wood ant shooter,属性微调(IP),酸液伤害,每次×1.15,-,每点 +0.08（迫击）/ +0.02（速射）,WoodAntAttackDamageImprovment,IntProperty,0 ~ 上限
+木蚁射手,Wood ant shooter,属性微调(IP),酸液攻速,每次×1.15,-,每点 +0.4%,WoodAntAttackSpeedImprovment,IntProperty,0 ~ 上限
+木蚁射手,Wood ant shooter,等级上限,WoodAntMaxUpgradeLevel,-,-,该单位可买到的最多级数,WoodAntMaxUpgradeLevel,IntProperty,0 ~ 上限
+切叶蚁大工,Leafcutter ant major,适应性(4选2),Durable 坚韧,100,Stat,护甲 +3,bLeafcutterDurable,BoolProperty,true / false
+切叶蚁大工,Leafcutter ant major,适应性(4选2),Shockproof 抗震,100,Stat,单次最大受伤 20,bLeafcutterShockProof,BoolProperty,true / false
+切叶蚁大工,Leafcutter ant major,适应性(4选2),Sharp 锋利,200,Ability,半径 250 内的友军把所受伤害的 30% 反弹给攻击者,bLeafcutterSharp,BoolProperty,true / false
+切叶蚁大工,Leafcutter ant major,适应性(4选2),Resilient 恢复,200,Ability,半径 250 内的友军物理抗性与毒抗 +30%,bLeafcutterResilient,BoolProperty,true / false
+切叶蚁大工,Leafcutter ant major,属性微调(IP),生命,每次×1.15,-,每点 +1,LeafcutterHealthImprovment,IntProperty,0 ~ 上限
+切叶蚁大工,Leafcutter ant major,属性微调(IP),物理抗性,每次×1.15,-,每点 +0.5%,LeafcutterPhysicalResImprovment,IntProperty,0 ~ 上限
+切叶蚁大工,Leafcutter ant major,属性微调(IP),毒抗,每次×1.15,-,每点 +0.5%,LeafcutterVenomResImprovment,IntProperty,0 ~ 上限
+切叶蚁大工,Leafcutter ant major,属性微调(IP),普攻攻速,每次×1.15,-,每点 +0.3%,LeafcutterAttackSpeedImprovment,IntProperty,0 ~ 上限
+切叶蚁大工,Leafcutter ant major,等级上限,LeafcutterMaxUpgradeLevel,-,-,该单位可买到的最多级数,LeafcutterMaxUpgradeLevel,IntProperty,0 ~ 上限
+火蚁兵,Fire ant soldier,适应性(4选2),Surefooted 稳足,200,Stat,骑乘蜇刺伤害 +10,bFireAntSurefooted,BoolProperty,true / false
+火蚁兵,Fire ant soldier,适应性(4选2),Evasive 闪避,200,Stat,闪避 +30%,bFireAntEvasive,BoolProperty,true / false
+火蚁兵,Fire ant soldier,适应性(4选2),Last stand 背水一战,300,Ability,血量归零且未骑乘时触发：0.5 秒内回复 50 HP，攻速只剩 50%，5 秒后阵亡。冷却 15,bFireAntLastStand,BoolProperty,true / false
+火蚁兵,Fire ant soldier,适应性(4选2),Last laugh 临死一击,300,Ability,血量归零且未骑乘时触发：造成 20 毒伤。冷却 60,bFireAntLastLaugh,BoolProperty,true / false
+火蚁兵,Fire ant soldier,属性微调(IP),移动速度,每次×1.15,-,每点 +2,FireAntMovementSpeedImprovment,IntProperty,0 ~ 上限
+火蚁兵,Fire ant soldier,属性微调(IP),范围抗性,每次×1.15,-,每点 +1%,FireAntAOEResistanceImprovment,IntProperty,0 ~ 上限
+火蚁兵,Fire ant soldier,属性微调(IP),穿刺,每次×1.15,-,每点 +0.5%,FireAntPiercingImprovment,IntProperty,0 ~ 上限
+火蚁兵,Fire ant soldier,属性微调(IP),普攻伤害,每次×1.15,-,每点 +0.05,FireAntAttackDamageImprovment,IntProperty,0 ~ 上限
+火蚁兵,Fire ant soldier,等级上限,FireAntMaxUpgradeLevel,-,-,该单位可买到的最多级数,FireAntMaxUpgradeLevel,IntProperty,0 ~ 上限
+马塔贝勒医疗蚁,Matabele ant medic,适应性(4选2),Sustain 维持,400,Effect,未骑乘时每次攻击后治疗半径 250 内友军 3 HP,bMatabeleAntSustain,BoolProperty,true / false
+马塔贝勒医疗蚁,Matabele ant medic,适应性(4选2),Preserve 保全,400,Ability,半径 250 内友军脱战回血速度 +1 HP/秒，最多叠 5 层,bMatabeleAntPreserve,BoolProperty,true / false
+马塔贝勒医疗蚁,Matabele ant medic,适应性(4选2),Field medic 战地医疗,600,Stat,拾取阵亡蚂蚁 5 秒后立刻复活它,bMatabeleAntFieldMedic,BoolProperty,true / false
+马塔贝勒医疗蚁,Matabele ant medic,适应性(4选2),Surgeon 外科医生,600,Stat,被复活的蚂蚁保留 85% 生命与伤害（配合 Field medic）,bMatabeleAntSurgeon,BoolProperty,true / false
+马塔贝勒医疗蚁,Matabele ant medic,属性微调(IP),移动速度,每次×1.15,-,每点 +2,MatabeleAntMovementSpeedImprovment,IntProperty,0 ~ 上限
+马塔贝勒医疗蚁,Matabele ant medic,属性微调(IP),物理抗性,每次×1.15,-,每点 +0.5%,MatabeleAntPhysicalResistanceImprovment,IntProperty,0 ~ 上限
+马塔贝勒医疗蚁,Matabele ant medic,属性微调(IP),毒抗,每次×1.15,-,每点 +0.5%,MatabeleAntVenomResistanceImprovment,IntProperty,0 ~ 上限
+马塔贝勒医疗蚁,Matabele ant medic,属性微调(IP),骑乘伤害,每次×1.15,-,每点 +0.05,MatabeleAntAttackDamageImprovment,IntProperty,0 ~ 上限
+马塔贝勒医疗蚁,Matabele ant medic,等级上限,MatabeleAntMaxUpgradeLevel,-,-,该单位可买到的最多级数,MatabeleAntMaxUpgradeLevel,IntProperty,0 ~ 上限
+子弹蚁兵,Bullet ant soldier,适应性(4选2),Lean pupation 精简羽化,600,Stat,孵化花费 -100,bBulletAntLeanPupation,BoolProperty,true / false
+子弹蚁兵,Bullet ant soldier,适应性(4选2),Fast recovery 快速恢复,600,Stat,治疗速度 +10,bBulletAntFastRecovery,BoolProperty,true / false
+子弹蚁兵,Bullet ant soldier,适应性(4选2),Reinforced carapace 强化甲壳,700,Stat,护甲 +1,bBulletAntReinforcedCarapace,BoolProperty,true / false
+子弹蚁兵,Bullet ant soldier,适应性(4选2),Sealed carapace 密封甲壳,700,Stat,毒抗 +50%,bBulletAntSealedCarapace,BoolProperty,true / false
+子弹蚁兵,Bullet ant soldier,属性微调(IP),生命,每次×1.15,-,每点 +3,BulletAntHealthImprovment,IntProperty,0 ~ 上限
+子弹蚁兵,Bullet ant soldier,属性微调(IP),穿刺,每次×1.15,-,每点 +0.5%,BulletAntPiercingImprovment,IntProperty,0 ~ 上限
+子弹蚁兵,Bullet ant soldier,属性微调(IP),单次最大受伤,每次×1.15,-,每点 -2,BulletAntMaxSingleDamageImprovment,IntProperty,0 ~ 上限
+子弹蚁兵,Bullet ant soldier,属性微调(IP),处决伤害,每次×1.15,-,每点 +2,BulletAntAttackDamageImprovment,IntProperty,0 ~ 上限
+子弹蚁兵,Bullet ant soldier,等级上限,BulletAntMaxUpgradeLevel,-,-,该单位可买到的最多级数,BulletAntMaxUpgradeLevel,IntProperty,0 ~ 上限
+爆炸蚁小兵,Exploding ant minor soldier,适应性(4选2),Controlled blast 可控爆破,400,Stat,爆炸伤害 +50%；毒液分泌伤害 +50%,bExplodingAntSoldierControlledBlast,BoolProperty,true / false
+爆炸蚁小兵,Exploding ant minor soldier,适应性(4选2),Violent blast 剧烈爆破,400,Stat,爆炸半径 +50%；毒液分泌半径 +50%,bExplodingAntSoldierViolentBlast,BoolProperty,true / false
+爆炸蚁小兵,Exploding ant minor soldier,适应性(4选2),Chain reaction 连锁反应,600,Effect,爆炸使附近爆炸蚁小兵的爆炸伤害 +20%，可叠加,bExplodingAntSoldierChainReaction,BoolProperty,true / false
+爆炸蚁小兵,Exploding ant minor soldier,适应性(4选2),Persistent secretions 持久分泌,600,Effect,爆炸在地面留下毒液，半径 200，每秒造成相当于爆炸伤害 12.5% 的毒伤，持续 4 秒,bExplodingAntSoldierPersistentSecretions,BoolProperty,true / false
+爆炸蚁小兵,Exploding ant minor soldier,属性微调(IP),毒抗,每次×1.15,-,每点 +0.5%,ExplodingAntSoldierVenomResistanceImprovment,IntProperty,0 ~ 上限
+爆炸蚁小兵,Exploding ant minor soldier,属性微调(IP),穿刺,每次×1.15,-,每点 +0.5%,ExplodingAntSoldierPiercingImprovment,IntProperty,0 ~ 上限
+爆炸蚁小兵,Exploding ant minor soldier,属性微调(IP),单次最大受伤,每次×1.15,-,每点 -2,ExplodingAntSoldierMaxDamageTakenImprovment,IntProperty,0 ~ 上限
+爆炸蚁小兵,Exploding ant minor soldier,属性微调(IP),普攻伤害,每次×1.15,-,每点 +0.05,ExplodingAntSoldierAttackDamageImprovment,IntProperty,0 ~ 上限
+爆炸蚁小兵,Exploding ant minor soldier,等级上限,ExplodingAntSoldierMaxUpgradeLevel,-,-,该单位可买到的最多级数,ExplodingAntSoldierMaxUpgradeLevel,IntProperty,0 ~ 上限
+爆炸白蚁工,Exploding termite worker,适应性(4选2),Rapid maturity 快速成熟,300,Stat,成熟时间 -50%,bExplodingTermiteWorkerRapidMaturity,BoolProperty,true / false
+爆炸白蚁工,Exploding termite worker,适应性(4选2),Accelerated gland filling 加速腺体充能,300,Stat,最大增益时间 -50%,bExplodingTermiteWorkerRapidGladFilling,BoolProperty,true / false
+爆炸白蚁工,Exploding termite worker,适应性(4选2),Extreme toxins 极限毒素,400,Stat,持续伤害时长 +50%,bExplodingTermiteWorkerExtremeToxins,BoolProperty,true / false
+爆炸白蚁工,Exploding termite worker,适应性(4选2),Extreme confusion 极限混乱,400,Stat,混乱时长 +50%,bExplodingTermiteWorkerExtremeConfusion,BoolProperty,true / false
+爆炸白蚁工,Exploding termite worker,属性微调(IP),生命,每次×1.15,-,每点 +1,ExplodingTermiteWorkerHealthImprovment,IntProperty,0 ~ 上限
+爆炸白蚁工,Exploding termite worker,属性微调(IP),移动速度,每次×1.15,-,每点 +2,ExplodingTermiteWorkerMovementSpeedImprovment,IntProperty,0 ~ 上限
+爆炸白蚁工,Exploding termite worker,属性微调(IP),护甲,每次×1.15,-,每点 +0.1,ExplodingTermiteWorkerArmourImprovment,IntProperty,0 ~ 上限
+爆炸白蚁工,Exploding termite worker,属性微调(IP),脱战闪避,每次×1.15,-,每点 +0.5%,ExplodingTermiteWorkerOutOfCombatEvasionImprovment,IntProperty,0 ~ 上限
+爆炸白蚁工,Exploding termite worker,等级上限,ExplodingTermiteWorkerMaxUpgradeLevel,-,-,该单位可买到的最多级数,ExplodingTermiteWorkerMaxUpgradeLevel,IntProperty,0 ~ 上限
+木蚁兵（近战型）,Wood ant soldier,属性微调(IP),生命,每次×1.15,-,每点 +1,WoodAntMeleeHealthImprovment,IntProperty,0 ~ 上限
+木蚁兵（近战型）,Wood ant soldier,属性微调(IP),范围抗性,每次×1.15,-,每点 +1%,WoodAntMeleeAOEResistanceImprovment,IntProperty,0 ~ 上限
+木蚁兵（近战型）,Wood ant soldier,属性微调(IP),物理抗性,每次×1.15,-,每点 +0.5%,WoodAntMeleePhysicalResistanceImprovment,IntProperty,0 ~ 上限
+木蚁兵（近战型）,Wood ant soldier,属性微调(IP),毒抗,每次×1.15,-,每点 +0.5%,WoodAntMeleeVenomResistanceImprovment,IntProperty,0 ~ 上限
+切叶蚁中工,Leafcutter ant media,属性微调(IP),生命,每次×1.15,-,每点 +0.8,LeafcutterMediaHealthImprovment,IntProperty,0 ~ 上限
+切叶蚁中工,Leafcutter ant media,属性微调(IP),护甲,每次×1.15,-,每点 +0.1,LeafcutterMediaArmourImprovment,IntProperty,0 ~ 上限
+切叶蚁中工,Leafcutter ant media,属性微调(IP),穿刺,每次×1.15,-,每点 +0.5%,LeafcutterMediaPiercingImprovment,IntProperty,0 ~ 上限
+切叶蚁中工,Leafcutter ant media,属性微调(IP),普攻伤害,每次×1.15,-,每点 +0.05,LeafcutterMediaAttackDamageImprovment,IntProperty,0 ~ 上限
+马塔贝勒兵蚁,Matabele ant soldier,属性微调(IP),生命,每次×1.15,-,每点 +1,MatabeleSoldierHealthImprovment,IntProperty,0 ~ 上限
+马塔贝勒兵蚁,Matabele ant soldier,属性微调(IP),移动速度,每次×1.15,-,每点 +2,MatabeleSoldierMovementSpeedImprovment,IntProperty,0 ~ 上限
+马塔贝勒兵蚁,Matabele ant soldier,属性微调(IP),普攻伤害,每次×1.15,-,每点 +0.05,MatabeleSoldierAttackDamageImprovment,IntProperty,0 ~ 上限
+马塔贝勒兵蚁,Matabele ant soldier,属性微调(IP),普攻攻速,每次×1.15,-,每点 +0.3%,MatabeleSoldierAttackSpeedImprovement,IntProperty,0 ~ 上限
+白蚁小兵,Termite minor soldier,属性微调(IP),生命,每次×1.15,-,每点 +0.5,TermiteMinorSoldierHealthImprovment,IntProperty,0 ~ 上限
+白蚁小兵,Termite minor soldier,属性微调(IP),物理抗性,每次×1.15,-,每点 +0.5%,TermiteMinorSoldierPhysicalResistanceImprovment,IntProperty,0 ~ 上限
+白蚁小兵,Termite minor soldier,属性微调(IP),穿刺,每次×1.15,-,每点 +0.5%,TermiteMinorSoldierPiercingImprovment,IntProperty,0 ~ 上限
+白蚁小兵,Termite minor soldier,属性微调(IP),普攻伤害,每次×1.15,-,每点 +0.05,TermiteMinorSoldierAttackDamageImprovment,IntProperty,0 ~ 上限
+白蚁大兵,Termite major soldier,属性微调(IP),移动速度,每次×1.15,-,每点 +2,TermiteMajorSoldierMovementSpeedImprovment,IntProperty,0 ~ 上限
+白蚁大兵,Termite major soldier,属性微调(IP),骑乘伤害,每次×1.15,-,每点 +0.05,TermiteMajorSoldierAttackDamageImprovment,IntProperty,0 ~ 上限
+白蚁大兵,Termite major soldier,属性微调(IP),物理抗性,每次×1.15,-,每点 +0.5%,TermiteMajorSoldierPhysicalResistanceImprovment,IntProperty,0 ~ 上限
+白蚁大兵,Termite major soldier,属性微调(IP),毒抗,每次×1.15,-,每点 +0.5%,TermiteMajorSoldierVenomResistanceImprovment,IntProperty,0 ~ 上限
+爆炸蚁大兵,Exploding ant major soldier,属性微调(IP),生命,每次×1.15,-,每点 +1,ExplodingAntMajorSoldierHealthImprovment,IntProperty,0 ~ 上限
+爆炸蚁大兵,Exploding ant major soldier,属性微调(IP),移动速度,每次×1.15,-,每点 +2,ExplodingAntMajorSoldierMovementSpeedImprovment,IntProperty,0 ~ 上限
+爆炸蚁大兵,Exploding ant major soldier,属性微调(IP),物理抗性,每次×1.15,-,每点 +0.5%,ExplodingAntMajorSoldierPhysicalResistanceImprovment,IntProperty,0 ~ 上限
+爆炸蚁大兵,Exploding ant major soldier,属性微调(IP),普攻攻速,每次×1.15,-,每点 +0.3%,ExplodingAntMajorSoldierAttackSpeedImprovment,IntProperty,0 ~ 上限
+爆炸白蚁兵,Exploding termite soldier,属性微调(IP),移动速度,每次×1.15,-,每点 +2,ExplodingTermiteSoldierMovementSpeedImprovment,IntProperty,0 ~ 上限
+爆炸白蚁兵,Exploding termite soldier,属性微调(IP),物理抗性,每次×1.15,-,每点 +0.5%,ExplodingTermiteSoldierPhysicalResistanceImprovment,IntProperty,0 ~ 上限
+爆炸白蚁兵,Exploding termite soldier,属性微调(IP),毒抗,每次×1.15,-,每点 +0.5%,ExplodingTermiteSoldierVenomResistanceImprovment,IntProperty,0 ~ 上限
+爆炸白蚁兵,Exploding termite soldier,属性微调(IP),普攻伤害,每次×1.15,-,每点 +0.05,ExplodingTermiteSoldierAttackDamageImprovment,IntProperty,0 ~ 上限

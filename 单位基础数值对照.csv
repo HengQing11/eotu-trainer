@@ -1,0 +1,50 @@
+﻿分组,单位(中),单位(英),数据表行名,等级,生命,普攻伤害,攻速系数,移速,护甲,物抗,毒抗,AOE抗,闪避,穿刺,单次最大受伤,回血/秒,挖掘量,搬运上限,视野半径,点数,战役/自定义差异,备注
+蚁皇浆单位,蚁后,Queen,Queen1,唯一档,600,1,1,0,0,50%,50%,0%,0%,0%,25,1,0,15,150,700,,蚁后在数据表里只有一行（没有 Lv2/Lv3）
+蚁皇浆单位,工蚁,Worker,WorkerAnt1,Lv1,25,0.6,1,300,0,0%,0%,0%,0%,0%,不限,0.1,2,15,400,2,,
+蚁皇浆单位,工蚁,Worker,WorkerAnt2,Lv2,35,0.8,1,340,0,0%,0%,0%,0%,0%,不限,0.1,4,15,400,4,,
+蚁皇浆单位,工蚁,Worker,WorkerAnt3,Lv3,45,1,1,380,0,0%,0%,0%,0%,0%,不限,0.1,6,15,400,5,,
+蚁皇浆单位,黑蚁兵,Black ant soldier,BlackAnt1,Lv1,50,3.6,1,300,0,0%,0%,20%,0%,0%,不限,0.1,2,15,400,10,单次最大受伤：战役 不限 → 自定义 40,
+蚁皇浆单位,黑蚁兵,Black ant soldier,BlackAnt2,Lv2,60,4.4,1,300,0,0%,0%,20%,0%,0%,不限,0.2,2,15,400,14,护甲：战役 0 → 自定义 1；单次最大受伤：战役 不限 → 自定义 40,
+蚁皇浆单位,黑蚁兵,Black ant soldier,BlackAnt3,Lv3,70,4.4,1.6,300,0,0%,0%,20%,0%,0%,不限,0.3,2,15,400,20,护甲：战役 0 → 自定义 2；单次最大受伤：战役 不限 → 自定义 40,
+蚁皇浆单位,木蚁射手,Wood ant shooter,WoodAntA1,Lv1,20,2,1,280,0,0%,0%,0%,0%,0%,不限,0.1,2,15,500,10,,远程酸液伤害不在本表（存在 Abilities 技能表里），这里显示的是普攻。迫击型；速射型（WoodAntB）数值完全相同
+蚁皇浆单位,木蚁射手,Wood ant shooter,WoodAntA2,Lv2,25,2,1,280,0,0%,0%,0%,0%,0%,不限,0.1,2,15,500,14,,远程酸液伤害不在本表（存在 Abilities 技能表里），这里显示的是普攻。迫击型；速射型（WoodAntB）数值完全相同
+蚁皇浆单位,木蚁射手,Wood ant shooter,WoodAntA3,Lv3,30,2,1,280,0,0%,0%,0%,0%,0%,不限,0.1,2,15,500,19,,远程酸液伤害不在本表（存在 Abilities 技能表里），这里显示的是普攻。迫击型；速射型（WoodAntB）数值完全相同
+蚁皇浆单位,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt1,Lv1,200,12,0.8,300,0,0%,0%,0%,0%,0%,不限,0.1,2,16,450,40,,嘲讽型。震晕型（LeafcutterMajorStun）数值完全相同
+蚁皇浆单位,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt2,Lv2,240,15,0.8,300,0,0%,0%,0%,0%,0%,不限,0.15,2,16,460,60,,嘲讽型。震晕型（LeafcutterMajorStun）数值完全相同
+蚁皇浆单位,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt3,Lv3,400,22,1,300,0,0%,0%,0%,0%,0%,不限,0.2,2,16,470,100,,嘲讽型。震晕型（LeafcutterMajorStun）数值完全相同
+蚁皇浆单位,火蚁兵,Fire ant soldier,FireAntVigorous1,Lv1,30,1.5,1,320,0,0%,10%,0%,0%,0%,不限,0.1,2,15,400,7,,勇猛型。扩散型（FireAntPervasive）数值完全相同
+蚁皇浆单位,火蚁兵,Fire ant soldier,FireAntVigorous2,Lv2,45,2,1,320,0,0%,10%,0%,0%,0%,不限,0.1,2,15,400,10,,勇猛型。扩散型（FireAntPervasive）数值完全相同
+蚁皇浆单位,火蚁兵,Fire ant soldier,FireAntVigorous3,Lv3,50,2.2,1,320,0,0%,10%,0%,0%,0%,不限,0.1,2,15,400,12,,勇猛型。扩散型（FireAntPervasive）数值完全相同
+蚁皇浆单位,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist1,Lv1,90,3,1,320,0,0%,0%,0%,0%,0%,不限,0.1,2,15,400,14,,麻醉师型。快速响应型移速 400/410/420、Lv3 多 40% 脱战闪避
+蚁皇浆单位,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist2,Lv2,105,4.5,1,320,0,0%,0%,0%,0%,0%,不限,0.1,2,17,400,16,,麻醉师型。快速响应型移速 400/410/420、Lv3 多 40% 脱战闪避
+蚁皇浆单位,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist3,Lv3,120,6,1,320,0,0%,0%,0%,0%,0%,不限,0.1,2,20,400,18,,麻醉师型。快速响应型移速 400/410/420、Lv3 多 40% 脱战闪避
+蚁皇浆单位,子弹蚁兵,Bullet ant soldier,BulletAnt1,Lv1,450,50,1,400,0,0%,0%,0%,0%,0%,300,0.1,2,16,450,30,,
+蚁皇浆单位,子弹蚁兵,Bullet ant soldier,BulletAnt2,Lv2,600,65,1,400,0,0%,0%,0%,0%,0%,300,0.15,2,16,460,42,,
+蚁皇浆单位,子弹蚁兵,Bullet ant soldier,BulletAnt3,Lv3,750,80,1,400,0,0%,0%,0%,0%,0%,300,0.2,2,16,470,54,,
+蚁皇浆单位,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier1,Lv1,45,3,1,300,0,0%,0%,0%,0%,0%,50,0.1,2,15,400,10,,
+蚁皇浆单位,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier2,Lv2,56,4,1,300,0,0%,0%,0%,0%,0%,50,0.2,2,15,400,14,,
+蚁皇浆单位,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier3,Lv3,67,5,1,450,0,0%,0%,0%,0%,0%,50,0.3,2,15,400,19,,
+蚁皇浆单位,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker1,Lv1,30,0.4,1,300,0,0%,0%,0%,0%,0%,不限,0.1,2,15,400,5,,
+蚁皇浆单位,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker2,Lv2,40,0.5,1,340,0,0%,0%,0%,0%,0%,不限,0.1,4,15,400,7,,
+蚁皇浆单位,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker3,Lv3,50,0.6,1,380,0,0%,0%,0%,0%,0%,不限,0.1,6,35,400,9,,
+蚁皇浆单位,木蚁兵（近战型）,Wood ant soldier,WoodAntMelee1,Lv1,85,0.6,1,320,0.2,0%,0%,30%,0%,0%,不限,0.1,2,15,400,8,,
+蚁皇浆单位,木蚁兵（近战型）,Wood ant soldier,WoodAntMelee2,Lv2,100,1.2,1,320,0.4,10%,0%,30%,0%,0%,不限,0.2,2,15,400,12,,
+蚁皇浆单位,木蚁兵（近战型）,Wood ant soldier,WoodAntMelee3,Lv3,120,1.8,1,320,0.6,20%,0%,30%,0%,0%,不限,0.3,2,15,400,18,,
+蚁皇浆单位,切叶蚁中工,Leafcutter ant media,LeafcutterMedia1,Lv1,100,4.5,1,310,0.2,0%,0%,0%,0%,20%,不限,0.1,2,17,400,22,生命：战役 100 → 自定义 80；普攻伤害：战役 4.5 → 自定义 4；搬运上限：战役 17 → 自定义 20,
+蚁皇浆单位,切叶蚁中工,Leafcutter ant media,LeafcutterMedia2,Lv2,115,6,1,320,0.4,0%,0%,0%,0%,30%,不限,0.2,2,19,400,25,生命：战役 115 → 自定义 95；普攻伤害：战役 6 → 自定义 5；搬运上限：战役 19 → 自定义 24,
+蚁皇浆单位,切叶蚁中工,Leafcutter ant media,LeafcutterMedia3,Lv3,130,7,1.3,330,0.8,0%,0%,0%,0%,40%,不限,0.3,2,22,400,37,生命：战役 130 → 自定义 110；普攻伤害：战役 7 → 自定义 6；搬运上限：战役 22 → 自定义 30,
+蚁皇浆单位,马塔贝勒兵蚁,Matabele ant soldier,MatabeleSoldier1,Lv1,200,12,1,340,0,0%,0%,0%,0%,0%,不限,0.1,2,16,450,30,,
+蚁皇浆单位,马塔贝勒兵蚁,Matabele ant soldier,MatabeleSoldier2,Lv2,220,15,1,340,0,0%,0%,0%,0%,0%,不限,0.1,2,16,460,42,,
+蚁皇浆单位,马塔贝勒兵蚁,Matabele ant soldier,MatabeleSoldier3,Lv3,300,19,1,340,0,0%,0%,0%,0%,0%,不限,0.1,2,16,470,54,,
+蚁皇浆单位,白蚁小兵,Termite minor soldier,TermiteSoldier1,Lv1,70,3,1,300,0,0%,0%,0%,0%,20%,不限,0.1,2,6,400,12,,
+蚁皇浆单位,白蚁小兵,Termite minor soldier,TermiteSoldier2,Lv2,80,4,1,300,0,0%,0%,0%,0%,20%,不限,0.1,2,8,400,16,,
+蚁皇浆单位,白蚁小兵,Termite minor soldier,TermiteSoldier3,Lv3,90,5,1,300,0,0%,0%,0%,0%,20%,不限,0.1,2,10,400,20,,
+蚁皇浆单位,白蚁大兵,Termite major soldier,TermiteMajorSoldier1,Lv1,140,5,1,300,0,0%,0%,0%,0%,20%,不限,0.1,2,8,400,22,,
+蚁皇浆单位,白蚁大兵,Termite major soldier,TermiteMajorSoldier2,Lv2,160,6,1,300,0,0%,0%,0%,0%,20%,不限,0.1,2,10,400,27,,
+蚁皇浆单位,白蚁大兵,Termite major soldier,TermiteMajorSoldier3,Lv3,190,7,1,300,0,0%,0%,0%,0%,20%,不限,0.1,2,12,400,29,,
+蚁皇浆单位,爆炸蚁大兵,Exploding ant major soldier,ExplodingAntMajorSoldier1,Lv1,100,4,1,310,0,0%,0%,0%,0%,0%,不限,0.1,2,20,400,12,,
+蚁皇浆单位,爆炸蚁大兵,Exploding ant major soldier,ExplodingAntMajorSoldier2,Lv2,115,4.5,1,320,0,0%,0%,0%,0%,0%,不限,0.2,2,24,400,14,,
+蚁皇浆单位,爆炸蚁大兵,Exploding ant major soldier,ExplodingAntMajorSoldier3,Lv3,130,5,1,330,0,0%,0%,0%,0%,0%,不限,0.3,2,30,400,16,,
+蚁皇浆单位,爆炸白蚁兵,Exploding termite soldier,ExplodingTermiteSoldier1,Lv1,95,6,0.7,300,0,0%,0%,0%,0%,20%,不限,0.1,2,15,400,14,,
+蚁皇浆单位,爆炸白蚁兵,Exploding termite soldier,ExplodingTermiteSoldier2,Lv2,110,7.5,0.7,300,0,0%,0%,0%,0%,20%,不限,0.1,2,15,400,16,,
+蚁皇浆单位,爆炸白蚁兵,Exploding termite soldier,ExplodingTermiteSoldier3,Lv3,125,9,0.7,300,0,0%,0%,0%,0%,20%,不限,0.1,2,15,400,18,,

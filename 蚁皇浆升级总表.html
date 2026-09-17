@@ -1,0 +1,665 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>地下蚁国 · 蚁皇浆升级总表（含你的本周目档实际数值）</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2024;--sub:#5b6470;--line:#e3e6ea;
+--acc:#7a5c2e;--acc2:#a9853f;--bool:#2f6f4f;--int:#2c5d8f;--warn:#a33;}
+*{box-sizing:border-box}
+body{margin:0;padding:32px 20px 60px;background:var(--bg);color:var(--ink);
+font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",-apple-system,"Segoe UI",sans-serif;
+line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-size:27px;margin:0 0 6px;letter-spacing:.5px}
+.lead{color:var(--sub);font-size:14px;margin-bottom:22px}
+.lead code{background:#eef0f3;padding:1px 6px;border-radius:4px;font-size:12.5px}
+.rules{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc2);
+border-radius:10px;padding:16px 20px;margin-bottom:26px;font-size:13.5px}
+.rules h2{margin:0 0 10px;font-size:15px;color:var(--acc)}
+.rules ul{margin:0;padding-left:20px}
+.rules li{margin:4px 0}
+.rules b{color:var(--acc)}
+.unit{background:var(--card);border:1px solid var(--line);border-radius:10px;
+padding:16px 20px 6px;margin-bottom:16px}
+.unit > h3{margin:0 0 2px;font-size:16.5px}
+.unit > h3 small{font-weight:400;color:var(--sub);font-size:12.5px;margin-left:8px}
+.meta{font-size:12.5px;color:var(--sub);margin:0 0 10px}
+.meta b{color:var(--acc)}
+.tagrow{margin:0 0 10px}
+.tag{display:inline-block;background:#f0ece3;color:var(--acc);border-radius:20px;
+padding:1px 10px;font-size:11.5px;margin:0 6px 6px 0}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:12px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#fafbfc;color:var(--sub);font-weight:600;font-size:12px;white-space:nowrap}
+td.f{font-family:Consolas,Menlo,monospace;font-size:11.5px;color:var(--int);word-break:break-all}
+td.cost{text-align:right;color:var(--acc);font-weight:600;white-space:nowrap}
+.b{color:var(--bool);font-weight:600}
+.i{color:var(--int);font-weight:600}
+.sub{color:var(--sub);font-size:12px}
+.note{background:#fff8e6;border:1px solid #f0dfae;border-radius:8px;padding:12px 16px;
+font-size:13px;margin:20px 0}
+.note b{color:#8a6a1f}
+.scroll{overflow-x:auto;margin:0 0 8px}
+table.tbl2{font-size:12px;margin-bottom:4px;min-width:100%}
+table.tbl2 th,table.tbl2 td{padding:5px 7px;white-space:nowrap;text-align:right}
+table.tbl2 th{position:sticky;top:0}
+table.tbl2 th.lv,table.tbl2 td.lv{text-align:left;position:sticky;left:0;background:var(--card);
+box-shadow:1px 0 0 var(--line)}
+table.tbl2 td.lv span{font-weight:600;color:var(--acc)}
+table.tbl2 td.lv small{color:var(--sub);font-size:10.5px;font-family:Consolas,Menlo,monospace}
+table.tbl2 tr.modded td{background:#fff4f4}
+table.tbl2 tr.modded td.lv{background:#fff4f4}
+.stathead{font-size:12.5px;color:var(--acc);font-weight:600;margin:12px 0 4px}
+h2.sec{font-size:18px;margin:34px 0 12px;padding-bottom:7px;border-bottom:2px solid var(--line)}
+footer{margin-top:36px;color:var(--sub);font-size:12px;text-align:center}
+
+/* ===== 合并进来: 你的存档(本周目) 部分 ===== */
+.ngp h2{font-size:16.5px;margin:26px 0 10px;padding-left:10px;border-left:3px solid #4a7fd4}
+.ngp .card{background:#fff;border:1px solid #e2e6ec;border-radius:10px;padding:16px 18px;margin:12px 0}
+.ngp .kpis{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}
+.ngp .kpi{background:#fff;border:1px solid #e2e6ec;border-radius:10px;padding:12px 18px;min-width:132px}
+.ngp .kpi .n{font-size:21px;font-weight:700;color:#2f6fd0}
+.ngp .kpi .l{font-size:12px;color:#6b7480;margin-top:2px}
+.ngp table{width:100%;border-collapse:collapse;font-size:13px;background:#fff}
+.ngp th,.ngp td{border:1px solid #e6e9ee;padding:7px 9px;text-align:left;vertical-align:top}
+.ngp th{background:#f0f3f7;color:#3b4550;font-weight:600;font-size:13px;white-space:normal}
+.ngp td.f,.ngp .f{font-family:Consolas,Menlo,monospace;font-size:12px;color:#8a5a00;word-break:break-all}
+.ngp .b{font-family:Consolas,Menlo,monospace;font-size:12px;color:#1c6b4a;font-weight:400}
+.ngp .up{color:#c0392b;font-weight:600}
+.ngp .dn{color:#1e7a4d;font-weight:600}
+.ngp .note{background:#fff8e6;border:1px solid #f0dfae;border-radius:8px;padding:12px 16px;font-size:13px;margin:16px 0}
+.ngp .note b{color:#8a6a1f}
+.ngp .warn{background:#fdf0f0;border:1px solid #f0c9c9}
+.ngp .warn b{color:#a33}
+.ngp .sub{color:#6b7480;font-size:12.5px}
+.ngp .fix{background:#eef5ff;border:1px solid #c9dcf5}
+.ngp .fix b{color:#2f6fd0}
+.ngp code{background:#f0f2f5;padding:1px 5px;border-radius:4px;font-size:12.5px}
+
+/* ===== 合并版新增: 目录 / 加点标记 ===== */
+.toc{background:var(--card);border:1px solid var(--line);border-radius:10px;
+padding:12px 18px 14px;margin:0 0 22px;font-size:13px}
+.toc b{display:block;color:var(--acc);font-size:12.5px;letter-spacing:.5px;margin-bottom:7px}
+.toc a{display:inline-block;color:#2c5d8f;text-decoration:none;margin:3px 16px 3px 0;
+padding-bottom:1px;border-bottom:1px dashed #c9dcf5}
+.toc a:hover{color:var(--acc);border-bottom-color:var(--acc2)}
+.toc a.star{color:#b4791f;font-weight:600;border-bottom-color:#e8cf9a}
+.yjbadge{background:#eef5ff;border:1px solid #c9dcf5;border-left:3px solid #2f6fd0;
+border-radius:8px;padding:8px 12px;font-size:12.5px;margin:0 0 10px;color:#2c5d8f}
+.yjbadge b{color:#c0392b}
+.yjbadge a{color:#2f6fd0;font-weight:600;text-decoration:none;border-bottom:1px dashed #9dc0ea}
+.yjbadge a:hover{color:var(--acc);border-bottom-color:var(--acc2)}
+.note.pending{margin-bottom:20px}
+.note.pending table{margin-top:10px;width:100%;border-collapse:collapse;font-size:12.5px;background:#fff}
+.note.pending th,.note.pending td{border:1px solid #e6e9ee;padding:6px 9px;text-align:left;vertical-align:top}
+.note.pending th{background:#f7ecec;color:#7a2c2c;font-weight:600}
+footer code{background:#eef0f3;padding:1px 6px;border-radius:4px;font-size:12px}
+
+</style></head><body><div class="wrap">
+<h1>地下蚁国 · 蚁皇浆（Royal Jelly）升级总表 <span style="font-size:15px;color:var(--sub);font-weight:400;letter-spacing:0">＋ 你的存档实际数值</span></h1>
+<p class="lead">按蚂蚁单位分组 · 含花费 / 效果 / 对应存档字段。数据来自三方交叉验证：游戏主程序字段名、
+你本机存档实际字段、官方 Hooded Horse wiki。<b>本页已把原来的两张表合为一份</b>：总表 + 你存档的实际数值。</p>
+
+<nav class="toc"><b>目录</b>
+<a class="star" href="#yoursave">★ 你的存档（本周目）实际数值</a>
+<a href="#sec1">一、主力单位</a>
+<a href="#sec2">二、进阶单位</a>
+</nav>
+
+
+<h2 class="sec" id="yoursave">★ 你的存档（本周目）实际数值</h2>
+<div class="ngp">
+<p class="lead">数据全部来自你本机文件实测：<code>Colony1.sav</code>（当前在用的蚁巢存档）＋ 游戏基础数值表 ＋ 官方 wiki 的每点效果。</p>
+
+<div class="kpis">
+<div class="kpi"><div class="n">本周目</div><div class="l">NewGamePlusLevel = 1</div></div>
+<div class="kpi"><div class="n">287 点</div><div class="l">已购属性微调(IP)合计</div></div>
+<div class="kpi"><div class="n">13 项</div><div class="l">受影响的微调项</div></div>
+</div>
+<div class="note fix"><b>先修正我上次说错的一句话：</b>我上一轮说「你主蚁巢里所有升级都是 0 / 未解锁」——<b>那是错的</b>。原因是我读存档整数的偏移量算错了 4 个字节（把 <code>ArrayIndex</code> 当成了数值），所有整数都被读成 0。现已用已知值（蚁皇浆 999999）校准，下面这些才是你存档里的真实数字。</div>
+<h2>1 · 你存档里读出来的数字（原文）</h2><div class="card">
+<table><tr><th style="width:36%">存档字段</th><th style="width:14%">类型</th><th style="width:12%">值</th><th>含义</th></tr>
+<tr><td class="f">LeafcutterMediaAttackDamageImprovment</td><td>Int</td><td><b>85</b></td><td>切叶蚁中工 · 普攻伤害（每点 +0.05）</td></tr>
+<tr><td class="f">WoodAntAttackSpeedImprovment</td><td>Int</td><td><b>30</b></td><td>木蚁射手 · 酸液攻速（每点 +0.4%）</td></tr>
+<tr><td class="f">WoodAntMeleeHealthImprovment</td><td>Int</td><td><b>30</b></td><td>木蚁兵（近战型） · 生命（每点 +1）</td></tr>
+<tr><td class="f">BlackAntAttackImprovment</td><td>Int</td><td><b>22</b></td><td>黑蚁兵 · 普攻伤害（每点 +0.05）</td></tr>
+<tr><td class="f">QueenCDImprovment</td><td>Int</td><td><b>20</b></td><td>蚁后 · 技能冷却（每点 -0.5 秒）</td></tr>
+<tr><td class="f">LeafcutterHealthImprovment</td><td>Int</td><td><b>20</b></td><td>切叶蚁大工 · 生命（每点 +1）</td></tr>
+<tr><td class="f">BulletAntPiercingImprovment</td><td>Int</td><td><b>20</b></td><td>子弹蚁兵 · 穿刺（每点 +0.5%）</td></tr>
+<tr><td class="f">BlackAntPiercingImprovment</td><td>Int</td><td><b>10</b></td><td>黑蚁兵 · 穿刺（每点 +0.5%）</td></tr>
+<tr><td class="f">WoodAntAttackDamageImprovment</td><td>Int</td><td><b>10</b></td><td>木蚁射手 · 酸液伤害（每点 +0.08（迫击）/ +0.02（速射））</td></tr>
+<tr><td class="f">LeafcutterPhysicalResImprovment</td><td>Int</td><td><b>10</b></td><td>切叶蚁大工 · 物理抗性（每点 +0.5%）</td></tr>
+<tr><td class="f">MatabeleAntMovementSpeedImprovment</td><td>Int</td><td><b>10</b></td><td>马塔贝勒医疗蚁 · 移动速度（每点 +2）</td></tr>
+<tr><td class="f">MatabeleAntAttackDamageImprovment</td><td>Int</td><td><b>10</b></td><td>马塔贝勒医疗蚁 · 骑乘伤害（每点 +0.05）</td></tr>
+<tr><td class="f">MatabeleAntPhysicalResistanceImprovment</td><td>Int</td><td><b>10</b></td><td>马塔贝勒医疗蚁 · 物理抗性（每点 +0.5%）</td></tr>
+<tr><td class="f">NewGamePlusLevel</td><td>Int</td><td><b>1</b></td><td>本周目等级（1 = 第一轮 NG+）</td></tr>
+</table>
+</div>
+
+<h2>2 · 已解锁的物种（12 个开关全开）</h2><div class="card">
+<table><tr><th style="width:46%">存档字段（Bool）</th><th>对应单位</th></tr>
+<tr><td class="b">bBlackAnt</td><td>黑蚁兵</td></tr>
+<tr><td class="b">bBulletAnt</td><td>子弹蚁兵</td></tr>
+<tr><td class="b">bFireAnt</td><td>火蚁兵</td></tr>
+<tr><td class="b">bLeafcutterMajor</td><td>切叶蚁大工</td></tr>
+<tr><td class="b">bLeafcutterMedia</td><td>切叶蚁中工</td></tr>
+<tr><td class="b">bMatabeleAnt</td><td>马塔贝勒医疗蚁</td></tr>
+<tr><td class="b">bMatabeleAntSoldier</td><td>马塔贝勒兵蚁</td></tr>
+<tr><td class="b">bMatabeleAntVariant</td><td>马塔贝勒医疗蚁</td></tr>
+<tr><td class="b">bTermiteMajorSoldier</td><td>白蚁大兵</td></tr>
+<tr><td class="b">bTermiteSoldier</td><td>白蚁小兵</td></tr>
+<tr><td class="b">bWoodAnt</td><td>木蚁射手</td></tr>
+<tr><td class="b">bWoodAntMelee</td><td>木蚁兵（近战型）</td></tr>
+</table>
+<p class="sub">本周目的规则之一就是「所有物种从开局起就可用蚁皇浆解锁」，所以这里几乎全开——包括普通战役拿不到的<b>子弹蚁</b>。</p></div>
+
+<h2>3 · 已启用的适应性（每个单位 2 个，共 14 个）</h2><div class="card">
+<table><tr><th style="width:46%">存档字段（Bool = true）</th><th>说明</th></tr>
+<tr><td class="b">bBlackAntDangerous</td><td>黑蚁兵 · Dangerous 危险</td></tr>
+<tr><td class="b">bBlackAntSelfPreservation</td><td>黑蚁兵 · Self preservation 自保</td></tr>
+<tr><td class="b">bBulletAntLeanPupation</td><td>子弹蚁兵 · Lean pupation 精简羽化</td></tr>
+<tr><td class="b">bBulletAntReinforcedCarapace</td><td>子弹蚁兵 · Reinforced carapace 强化甲壳</td></tr>
+<tr><td class="b">bFireAntLastLaugh</td><td>火蚁兵 · Last laugh 临死一击</td></tr>
+<tr><td class="b">bFireAntSurefooted</td><td>火蚁兵 · Surefooted 稳足</td></tr>
+<tr><td class="b">bGeneTheifQueenFierceMother</td><td>蚁后 · Fierce mother 狂暴母体</td></tr>
+<tr><td class="b">bGeneTheifQueenStrongCarpiece</td><td>蚁后 · （wiki 名：Royal guard 皇家卫兵）</td></tr>
+<tr><td class="b">bGeneTheifWorkerEfficientBrood</td><td>工蚁 · Efficient brood 高效虫群</td></tr>
+<tr><td class="b">bGeneTheifWorkerStrongMandibles</td><td>工蚁 · Nimble 敏捷</td></tr>
+<tr><td class="b">bLeafcutterSharp</td><td>切叶蚁大工 · Sharp 锋利</td></tr>
+<tr><td class="b">bLeafcutterShockProof</td><td>切叶蚁大工 · Shockproof 抗震</td></tr>
+<tr><td class="b">bMatabeleAntFieldMedic</td><td>马塔贝勒医疗蚁 · Field medic 战地医疗</td></tr>
+<tr><td class="b">bMatabeleAntSustain</td><td>马塔贝勒医疗蚁 · Sustain 维持</td></tr>
+<tr><td class="b">bWoodAntCrippling</td><td>木蚁射手 · Crippling 致残</td></tr>
+<tr><td class="b">bWoodAntHighPressure</td><td>木蚁射手 · High pressure 高压</td></tr>
+</table>
+<p class="sub">每个单位有 4 个适应性、同时只能启用 2 个，所以存档里只会留下你选中的那 2 个字段。</p></div>
+
+<h2 id="ngp-eff">4 · 这些升级让你游戏里实际变成多少</h2>
+<p class="sub">基础值取自游戏数值表（战役版）；「生效值」= 基础值 + 你的 IP 加成。Lv1/2/3 对应数值表里的 <code>行名1/2/3</code>，实际用哪一档看该单位买到的等级。</p>
+<div class="card">
+<p><b>切叶蚁中工</b> <span class="sub">（Leafcutter ant media）· 普攻伤害 ＋ <b>85 点</b></span></p>
+<p>每点 +0.05 × 85 点 = <b><span class="up">+4.25</span></b></p>
+<table><tr><th>等级</th><th>数据表行名</th><th>基础值</th><th>你的加成</th><th>生效值</th></tr>
+<tr><td>Lv1</td><td class="f">LeafcutterMedia1</td><td>+4.5%</td><td class="up"><span class="up">+4.25</span></td><td><b>+8.75%</b></td></tr>
+<tr><td>Lv2</td><td class="f">LeafcutterMedia2</td><td>+6%</td><td class="up"><span class="up">+4.25</span></td><td><b>+10.25%</b></td></tr>
+<tr><td>Lv3</td><td class="f">LeafcutterMedia3</td><td>+7%</td><td class="up"><span class="up">+4.25</span></td><td><b>+11.25%</b></td></tr>
+</table>
+</div>
+<div class="card">
+<p><b>木蚁射手</b> <span class="sub">（Wood ant shooter）· 酸液攻速 ＋ <b>30 点</b></span></p>
+<p>每点 +0.4% × 30 点 = <b><span class="up">+12%</span></b></p>
+<p class="sub">注：酸液攻速属技能（Abilities 表）；这一项基础值不在数值表里，所以只列你的加成。</p>
+</div>
+<div class="card">
+<p><b>木蚁兵（近战型）</b> <span class="sub">（Wood ant soldier）· 生命 ＋ <b>30 点</b></span></p>
+<p>每点 +1 × 30 点 = <b><span class="up">+30</span></b></p>
+<table><tr><th>等级</th><th>数据表行名</th><th>基础值</th><th>你的加成</th><th>生效值</th></tr>
+<tr><td>Lv1</td><td class="f">WoodAntMelee1</td><td>+85%</td><td class="up"><span class="up">+30</span></td><td><b>+115%</b></td></tr>
+<tr><td>Lv2</td><td class="f">WoodAntMelee2</td><td>+100%</td><td class="up"><span class="up">+30</span></td><td><b>+130%</b></td></tr>
+<tr><td>Lv3</td><td class="f">WoodAntMelee3</td><td>+120%</td><td class="up"><span class="up">+30</span></td><td><b>+150%</b></td></tr>
+</table>
+</div>
+<div class="card">
+<p><b>黑蚁兵</b> <span class="sub">（Black ant soldier）· 普攻伤害 ＋ <b>22 点</b></span></p>
+<p>每点 +0.05 × 22 点 = <b><span class="up">+1.1</span></b></p>
+<table><tr><th>等级</th><th>数据表行名</th><th>基础值</th><th>你的加成</th><th>生效值</th></tr>
+<tr><td>Lv1</td><td class="f">BlackAnt1</td><td>+3.6%</td><td class="up"><span class="up">+1.1</span></td><td><b>+4.7%</b></td></tr>
+<tr><td>Lv2</td><td class="f">BlackAnt2</td><td>+4.4%</td><td class="up"><span class="up">+1.1</span></td><td><b>+5.5%</b></td></tr>
+<tr><td>Lv3</td><td class="f">BlackAnt3</td><td>+4.4%</td><td class="up"><span class="up">+1.1</span></td><td><b>+5.5%</b></td></tr>
+</table>
+</div>
+<div class="card">
+<p><b>蚁后</b> <span class="sub">（Queen）· 技能冷却 ＋ <b>20 点</b></span></p>
+<p>每点 -0.5 秒 × 20 点 = <b><span class="dn">-10</span></b></p>
+<p class="sub">注：技能冷却在 Abilities 技能表，不在 CreatureStats 里；这一项基础值不在数值表里，所以只列你的加成。</p>
+</div>
+<div class="card">
+<p><b>切叶蚁大工</b> <span class="sub">（Leafcutter ant major）· 生命 ＋ <b>20 点</b></span></p>
+<p>每点 +1 × 20 点 = <b><span class="up">+20</span></b></p>
+<table><tr><th>等级</th><th>数据表行名</th><th>基础值</th><th>你的加成</th><th>生效值</th></tr>
+<tr><td>Lv1</td><td class="f">LeafcutterMajorTaunt1</td><td>+200%</td><td class="up"><span class="up">+20</span></td><td><b>+220%</b></td></tr>
+<tr><td>Lv2</td><td class="f">LeafcutterMajorTaunt2</td><td>+240%</td><td class="up"><span class="up">+20</span></td><td><b>+260%</b></td></tr>
+<tr><td>Lv3</td><td class="f">LeafcutterMajorTaunt3</td><td>+400%</td><td class="up"><span class="up">+20</span></td><td><b>+420%</b></td></tr>
+</table>
+</div>
+<div class="card">
+<p><b>子弹蚁兵</b> <span class="sub">（Bullet ant soldier）· 穿刺 ＋ <b>20 点</b></span></p>
+<p>每点 +0.5% × 20 点 = <b><span class="up">+10%</span></b></p>
+<table><tr><th>等级</th><th>数据表行名</th><th>基础值</th><th>你的加成</th><th>生效值</th></tr>
+<tr><td>Lv1</td><td class="f">BulletAnt1</td><td>+0%</td><td class="up"><span class="up">+10%</span></td><td><b>+0.1%</b></td></tr>
+<tr><td>Lv2</td><td class="f">BulletAnt2</td><td>+0%</td><td class="up"><span class="up">+10%</span></td><td><b>+0.1%</b></td></tr>
+<tr><td>Lv3</td><td class="f">BulletAnt3</td><td>+0%</td><td class="up"><span class="up">+10%</span></td><td><b>+0.1%</b></td></tr>
+</table>
+</div>
+<div class="card">
+<p><b>黑蚁兵</b> <span class="sub">（Black ant soldier）· 穿刺 ＋ <b>10 点</b></span></p>
+<p>每点 +0.5% × 10 点 = <b><span class="up">+5%</span></b></p>
+<table><tr><th>等级</th><th>数据表行名</th><th>基础值</th><th>你的加成</th><th>生效值</th></tr>
+<tr><td>Lv1</td><td class="f">BlackAnt1</td><td>+0%</td><td class="up"><span class="up">+5%</span></td><td><b>+0.05%</b></td></tr>
+<tr><td>Lv2</td><td class="f">BlackAnt2</td><td>+0%</td><td class="up"><span class="up">+5%</span></td><td><b>+0.05%</b></td></tr>
+<tr><td>Lv3</td><td class="f">BlackAnt3</td><td>+0%</td><td class="up"><span class="up">+5%</span></td><td><b>+0.05%</b></td></tr>
+</table>
+</div>
+<div class="card">
+<p><b>木蚁射手</b> <span class="sub">（Wood ant shooter）· 酸液伤害 ＋ <b>10 点</b></span></p>
+<p>每点 +0.08（迫击）/ +0.02（速射） × 10 点 = <b><span class="up">+0.8（迫击型）</span> ／ <span class="up">+0.2（速射型）</span></b></p>
+<p class="sub">注：酸液伤害属技能（Abilities 表）；这一项基础值不在数值表里，所以只列你的加成。</p>
+</div>
+<div class="card">
+<p><b>切叶蚁大工</b> <span class="sub">（Leafcutter ant major）· 物理抗性 ＋ <b>10 点</b></span></p>
+<p>每点 +0.5% × 10 点 = <b><span class="up">+5%</span></b></p>
+<table><tr><th>等级</th><th>数据表行名</th><th>基础值</th><th>你的加成</th><th>生效值</th></tr>
+<tr><td>Lv1</td><td class="f">LeafcutterMajorTaunt1</td><td>+0%</td><td class="up"><span class="up">+5%</span></td><td><b>+0.05%</b></td></tr>
+<tr><td>Lv2</td><td class="f">LeafcutterMajorTaunt2</td><td>+0%</td><td class="up"><span class="up">+5%</span></td><td><b>+0.05%</b></td></tr>
+<tr><td>Lv3</td><td class="f">LeafcutterMajorTaunt3</td><td>+0%</td><td class="up"><span class="up">+5%</span></td><td><b>+0.05%</b></td></tr>
+</table>
+</div>
+<div class="card">
+<p><b>马塔贝勒医疗蚁</b> <span class="sub">（Matabele ant medic）· 移动速度 ＋ <b>10 点</b></span></p>
+<p>每点 +2 × 10 点 = <b><span class="up">+20</span></b></p>
+<table><tr><th>等级</th><th>数据表行名</th><th>基础值</th><th>你的加成</th><th>生效值</th></tr>
+<tr><td>Lv1</td><td class="f">MatabeleMedicAnesthetist1</td><td>+320%</td><td class="up"><span class="up">+20</span></td><td><b>+340%</b></td></tr>
+<tr><td>Lv2</td><td class="f">MatabeleMedicAnesthetist2</td><td>+320%</td><td class="up"><span class="up">+20</span></td><td><b>+340%</b></td></tr>
+<tr><td>Lv3</td><td class="f">MatabeleMedicAnesthetist3</td><td>+320%</td><td class="up"><span class="up">+20</span></td><td><b>+340%</b></td></tr>
+</table>
+</div>
+<div class="card">
+<p><b>马塔贝勒医疗蚁</b> <span class="sub">（Matabele ant medic）· 骑乘伤害 ＋ <b>10 点</b></span></p>
+<p>每点 +0.05 × 10 点 = <b><span class="up">+0.5</span></b></p>
+<p class="sub">注：骑乘是特殊攻击形态，数值不在 CreatureStats 表；这一项基础值不在数值表里，所以只列你的加成。</p>
+</div>
+<div class="card">
+<p><b>马塔贝勒医疗蚁</b> <span class="sub">（Matabele ant medic）· 物理抗性 ＋ <b>10 点</b></span></p>
+<p>每点 +0.5% × 10 点 = <b><span class="up">+5%</span></b></p>
+<table><tr><th>等级</th><th>数据表行名</th><th>基础值</th><th>你的加成</th><th>生效值</th></tr>
+<tr><td>Lv1</td><td class="f">MatabeleMedicAnesthetist1</td><td>+0%</td><td class="up"><span class="up">+5%</span></td><td><b>+0.05%</b></td></tr>
+<tr><td>Lv2</td><td class="f">MatabeleMedicAnesthetist2</td><td>+0%</td><td class="up"><span class="up">+5%</span></td><td><b>+0.05%</b></td></tr>
+<tr><td>Lv3</td><td class="f">MatabeleMedicAnesthetist3</td><td>+0%</td><td class="up"><span class="up">+5%</span></td><td><b>+0.05%</b></td></tr>
+</table>
+</div>
+
+</div>
+<h2 class="sec" id="sec1">一、主力单位（有适应性 + 属性微调）</h2>
+<div class="unit">
+<h3>蚁后<small>Queen</small></h3>
+<p class="meta"><b>解锁/升级花费：</b>无需解锁（开局即有）</p>
+<p class="yjbadge">★ 你已加点：技能冷却 <b>+20 点</b>（每点 -0.5 秒 = <b>-10 秒</b>） —— 这几项属技能/特殊攻击表，不在下面这张基础属性表里 ｜ <a href="#ngp-eff">看详细推导 →</a></p>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>唯一档</span><br><small class="f">Queen1</small></td><td>600</td><td>1</td><td>1</td><td>0</td><td>0</td><td>50%</td><td>50%</td><td>0%</td><td>0%</td><td>0%</td><td>25</td><td>1</td><td>0</td><td>15</td><td>150</td><td>700</td></tr>
+</table></div>
+<p class="sub">蚁后在数据表里只有一行（没有 Lv2/Lv3）</p>
+<table><tr><th>适应性（4 选 2）</th><th>花费</th><th>类型</th><th>效果</th><th>存档字段（Bool）</th></tr>
+<tr><td>Second wind 二次风</td><td class="cost">50</td><td class="sub">Ability</td><td>血量降到 75% 时触发：无敌 30 秒，5 秒内回复 300 HP。冷却 300</td><td class="f"><span class="b">bGeneTheifQueenSecondWind</span></td></tr>
+<tr><td>Fierce mother 狂暴母体</td><td class="cost">50</td><td class="sub">Ability</td><td>血量降到 75% 时触发：半径 2600 内敌人混乱 10 秒。冷却 300</td><td class="f"><span class="b">bGeneTheifQueenFierceMother</span></td></tr>
+<tr><td>（wiki 名：Royal guard 皇家卫兵）</td><td class="cost">100</td><td class="sub">Ability</td><td>血量降到 75% 时触发：每个蚁后房间立刻产出 2 只皇家卫兵、仅存活 60 秒；5 秒内产卵不需食物与工蚁。冷却 300</td><td class="f"><span class="b">bGeneTheifQueenStrongCarpiece</span></td></tr>
+<tr><td>（wiki 名：Royal decree 皇家敕令）</td><td class="cost">100</td><td class="sub">Ability</td><td>血量降到 75% 时触发：20 秒内产卵不需食物与工蚁。冷却 300</td><td class="f"><span class="b">bGeneTheifQueenResistantCarpiece</span></td></tr>
+</table>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>生命</td><td>每点 +10</td><td class="f"><span class="i">QueenHealthImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>技能冷却</td><td>每点 -0.5 秒</td><td class="f"><span class="i">QueenCDImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+</div>
+<div class="unit">
+<h3>工蚁<small>Worker</small></h3>
+<p class="meta"><b>解锁/升级花费：</b>升级：Lv2 = 10，Lv3 = 15</p>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">WorkerAnt1</small></td><td>25</td><td>0.6</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>2</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">WorkerAnt2</small></td><td>35</td><td>0.8</td><td>1</td><td>340</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>4</td><td>15</td><td>400</td><td>4</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">WorkerAnt3</small></td><td>45</td><td>1</td><td>1</td><td>380</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>6</td><td>15</td><td>400</td><td>5</td></tr>
+</table></div>
+<table><tr><th>适应性（4 选 2）</th><th>花费</th><th>类型</th><th>效果</th><th>存档字段（Bool）</th></tr>
+<tr><td>Nimble 敏捷</td><td class="cost">30</td><td class="sub">Stat</td><td>脱战闪避 +60%；被发现的距离更短；脱战时不显示在小地图与血条上</td><td class="f"><span class="b">bGeneTheifWorkerStrongMandibles</span></td></tr>
+<tr><td>Defensive 防御</td><td class="cost">30</td><td class="sub">Stat</td><td>单次最大受伤 20；物理抗性 +20%；毒抗 +20%</td><td class="f"><span class="b">bGeneTheifWorkerStrongCarpiece</span></td></tr>
+<tr><td>Aggressive brood 好斗虫群</td><td class="cost">40</td><td class="sub">Stat</td><td>普攻伤害 +200%</td><td class="f"><span class="b">bGeneTheifWorkerAggressiveBrood</span></td></tr>
+<tr><td>Efficient brood 高效虫群</td><td class="cost">40</td><td class="sub">Stat</td><td>移速 +40；搬运量 +10；工作完成速度 +2；走在非高速通道上不受减速与毒素影响</td><td class="f"><span class="b">bGeneTheifWorkerEfficientBrood</span></td></tr>
+</table>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>移动速度</td><td>每点 +2</td><td class="f"><span class="i">WorkerSpeedImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>搬运量</td><td>每点 +0.4</td><td class="f"><span class="i">WorkerHarvestImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+<p class="sub">等级上限字段：<span class="f">WorkerMaxUpgradeLevel</span></p>
+</div>
+<div class="unit">
+<h3>黑蚁兵<small>Black ant soldier</small></h3>
+<p class="meta"><b>解锁/升级花费：</b>解锁 Lv1 = 75；升级 Lv2 = 15，Lv3 = 20</p>
+<div class="tagrow"><span class="tag">存档开关：bBlackAnt（单位解锁）</span></div>
+<p class="yjbadge">★ 你已加点：普攻伤害 <b>+22 点</b>（每点 +0.05 = <b>+1.1</b>）→ 生效值 Lv1 <b>4.7</b> / Lv2 <b>5.5</b> / Lv3 <b>5.5</b><br>★ 你已加点：穿刺 <b>+10 点</b>（每点 +0.5% = <b>+5%</b>）→ 生效值 <b>5%</b> ｜ <a href="#ngp-eff">看详细推导 →</a></p>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">BlackAnt1</small></td><td>50</td><td>3.6</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>20%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>10</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">BlackAnt2</small></td><td>60</td><td>4.4</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>20%</td><td>0%</td><td>0%</td><td>不限</td><td>0.2</td><td>2</td><td>15</td><td>400</td><td>14</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">BlackAnt3</small></td><td>70</td><td>4.4</td><td>1.6</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>20%</td><td>0%</td><td>0%</td><td>不限</td><td>0.3</td><td>2</td><td>15</td><td>400</td><td>20</td></tr>
+</table></div>
+<p class="sub">自定义模式差异：Lv1 单次最大受伤：战役 不限 → 自定义 40；Lv2 护甲：战役 0 → 自定义 1；Lv2 单次最大受伤：战役 不限 → 自定义 40；Lv3 护甲：战役 0 → 自定义 2；Lv3 单次最大受伤：战役 不限 → 自定义 40</p>
+<table><tr><th>适应性（4 选 2）</th><th>花费</th><th>类型</th><th>效果</th><th>存档字段（Bool）</th></tr>
+<tr><td>Dangerous 危险</td><td class="cost">50</td><td class="sub">Stat</td><td>普攻攻速 +20%</td><td class="f"><span class="b">bBlackAntDangerous</span></td></tr>
+<tr><td>Meat wall 肉盾</td><td class="cost">50</td><td class="sub">Stat</td><td>物理抗性 +50%</td><td class="f"><span class="b">bBlackAntMeatWall</span></td></tr>
+<tr><td>Self preservation 自保</td><td class="cost">70</td><td class="sub">Ability</td><td>血量降到 40% 时触发：脱离战斗 0.5 秒</td><td class="f"><span class="b">bBlackAntSelfPreservation</span></td></tr>
+<tr><td>Self repair 自修</td><td class="cost">70</td><td class="sub">Stat</td><td>治疗速度 +4</td><td class="f"><span class="b">bBlackAntSelfRepair</span></td></tr>
+</table>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>生命</td><td>每点 +0.7</td><td class="f"><span class="i">BlackAntHealthImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>护甲</td><td>每点 +0.1</td><td class="f"><span class="i">BlackAntArmourImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>穿刺</td><td>每点 +0.5%</td><td class="f"><span class="i">BlackAntPiercingImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>普攻伤害</td><td>每点 +0.05</td><td class="f"><span class="i">BlackAntAttackImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+<p class="sub">等级上限字段：<span class="f">BlackAntMaxUpgradeLevel</span></p>
+</div>
+<div class="unit">
+<h3>木蚁射手<small>Wood ant shooter</small></h3>
+<p class="meta"><b>解锁/升级花费：</b>解锁 Lv1 = 150；升级 Lv2 = 30，Lv3 = 40</p>
+<div class="tagrow"><span class="tag">存档开关：bWoodAnt / bWoodAntMelee / bWoodAntVarient（射手 / 近战 二选一）</span></div>
+<p class="yjbadge">★ 你已加点：酸液攻速 <b>+30 点</b>（每点 +0.4% = <b>+12%</b>）、酸液伤害 <b>+10 点</b>（每点 +0.08（迫击）/ +0.02（速射） = <b>+0.8（迫击） / +0.2（速射）</b>） —— 这几项属技能/特殊攻击表，不在下面这张基础属性表里 ｜ <a href="#ngp-eff">看详细推导 →</a></p>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">WoodAntA1</small></td><td>20</td><td>2</td><td>1</td><td>280</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>500</td><td>10</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">WoodAntA2</small></td><td>25</td><td>2</td><td>1</td><td>280</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>500</td><td>14</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">WoodAntA3</small></td><td>30</td><td>2</td><td>1</td><td>280</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>500</td><td>19</td></tr>
+</table></div>
+<p class="sub">远程酸液伤害不在本表（存在 Abilities 技能表里），这里显示的是普攻。迫击型；速射型（WoodAntB）数值完全相同</p>
+<table><tr><th>适应性（4 选 2）</th><th>花费</th><th>类型</th><th>效果</th><th>存档字段（Bool）</th></tr>
+<tr><td>Corrosive 腐蚀</td><td class="cost">80</td><td class="sub">Effect</td><td>酸液额外造成毒伤：迫击型每 0.1 秒 1.2、持续 0.5 秒；速射型每 0.1 秒 0.2</td><td class="f"><span class="b">bWoodAntCorrosive</span></td></tr>
+<tr><td>High pressure 高压</td><td class="cost">80</td><td class="sub">Effect</td><td>酸液额外物理伤害：迫击型 +4.5；速射型 +0.75</td><td class="f"><span class="b">bWoodAntHighPressure</span></td></tr>
+<tr><td>Crippling 致残</td><td class="cost">100</td><td class="sub">Effect</td><td>目标受到的物理伤害 +40%（迫击 1.5 秒 / 速射 0.4 秒）；可叠加至 +100%</td><td class="f"><span class="b">bWoodAntCrippling</span></td></tr>
+<tr><td>Weakening 弱化</td><td class="cost">100</td><td class="sub">Effect</td><td>目标受到的毒伤 +40%（迫击 1.5 秒 / 速射 0.4 秒）；可叠加至 +100%</td><td class="f"><span class="b">bWoodAntWeakening</span></td></tr>
+</table>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>生命</td><td>每点 +0.5</td><td class="f"><span class="i">WoodAntHealthImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>射程</td><td>每点 +2</td><td class="f"><span class="i">WoodAntRangeImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>酸液伤害</td><td>每点 +0.08（迫击）/ +0.02（速射）</td><td class="f"><span class="i">WoodAntAttackDamageImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>酸液攻速</td><td>每点 +0.4%</td><td class="f"><span class="i">WoodAntAttackSpeedImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+<p class="sub">等级上限字段：<span class="f">WoodAntMaxUpgradeLevel</span></p>
+</div>
+<div class="unit">
+<h3>切叶蚁大工<small>Leafcutter ant major</small></h3>
+<p class="meta"><b>解锁/升级花费：</b>解锁 Lv1 = 300；升级 Lv2 = 50，Lv3 = 60</p>
+<div class="tagrow"><span class="tag">存档开关：bLeafcutterMedia / bLeafcutterMajor / bLeafcutterVarient / bLeafcutterSuperMajor</span></div>
+<p class="yjbadge">★ 你已加点：生命 <b>+20 点</b>（每点 +1 = <b>+20</b>）→ 生效值 Lv1 <b>220</b> / Lv2 <b>260</b> / Lv3 <b>420</b><br>★ 你已加点：物理抗性 <b>+10 点</b>（每点 +0.5% = <b>+5%</b>）→ 生效值 <b>5%</b> ｜ <a href="#ngp-eff">看详细推导 →</a></p>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">LeafcutterMajorTaunt1</small></td><td>200</td><td>12</td><td>0.8</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>16</td><td>450</td><td>40</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">LeafcutterMajorTaunt2</small></td><td>240</td><td>15</td><td>0.8</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.15</td><td>2</td><td>16</td><td>460</td><td>60</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">LeafcutterMajorTaunt3</small></td><td>400</td><td>22</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.2</td><td>2</td><td>16</td><td>470</td><td>100</td></tr>
+</table></div>
+<p class="sub">嘲讽型。震晕型（LeafcutterMajorStun）数值完全相同</p>
+<table><tr><th>适应性（4 选 2）</th><th>花费</th><th>类型</th><th>效果</th><th>存档字段（Bool）</th></tr>
+<tr><td>Durable 坚韧</td><td class="cost">100</td><td class="sub">Stat</td><td>护甲 +3</td><td class="f"><span class="b">bLeafcutterDurable</span></td></tr>
+<tr><td>Shockproof 抗震</td><td class="cost">100</td><td class="sub">Stat</td><td>单次最大受伤 20</td><td class="f"><span class="b">bLeafcutterShockProof</span></td></tr>
+<tr><td>Sharp 锋利</td><td class="cost">200</td><td class="sub">Ability</td><td>半径 250 内的友军把所受伤害的 30% 反弹给攻击者</td><td class="f"><span class="b">bLeafcutterSharp</span></td></tr>
+<tr><td>Resilient 恢复</td><td class="cost">200</td><td class="sub">Ability</td><td>半径 250 内的友军物理抗性与毒抗 +30%</td><td class="f"><span class="b">bLeafcutterResilient</span></td></tr>
+</table>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>生命</td><td>每点 +1</td><td class="f"><span class="i">LeafcutterHealthImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>物理抗性</td><td>每点 +0.5%</td><td class="f"><span class="i">LeafcutterPhysicalResImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>毒抗</td><td>每点 +0.5%</td><td class="f"><span class="i">LeafcutterVenomResImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>普攻攻速</td><td>每点 +0.3%</td><td class="f"><span class="i">LeafcutterAttackSpeedImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+<p class="sub">等级上限字段：<span class="f">LeafcutterMaxUpgradeLevel</span></p>
+</div>
+<div class="unit">
+<h3>火蚁兵<small>Fire ant soldier</small></h3>
+<p class="meta"><b>解锁/升级花费：</b>解锁 Lv1 = 500；升级 Lv2 = 70，Lv3 = 80</p>
+<div class="tagrow"><span class="tag">存档开关：bFireAnt（单位解锁）/ bFireAntVarient（变体）</span></div>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">FireAntVigorous1</small></td><td>30</td><td>1.5</td><td>1</td><td>320</td><td>0</td><td>0%</td><td>10%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>7</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">FireAntVigorous2</small></td><td>45</td><td>2</td><td>1</td><td>320</td><td>0</td><td>0%</td><td>10%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>10</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">FireAntVigorous3</small></td><td>50</td><td>2.2</td><td>1</td><td>320</td><td>0</td><td>0%</td><td>10%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>12</td></tr>
+</table></div>
+<p class="sub">勇猛型。扩散型（FireAntPervasive）数值完全相同</p>
+<table><tr><th>适应性（4 选 2）</th><th>花费</th><th>类型</th><th>效果</th><th>存档字段（Bool）</th></tr>
+<tr><td>Surefooted 稳足</td><td class="cost">200</td><td class="sub">Stat</td><td>骑乘蜇刺伤害 +10</td><td class="f"><span class="b">bFireAntSurefooted</span></td></tr>
+<tr><td>Evasive 闪避</td><td class="cost">200</td><td class="sub">Stat</td><td>闪避 +30%</td><td class="f"><span class="b">bFireAntEvasive</span></td></tr>
+<tr><td>Last stand 背水一战</td><td class="cost">300</td><td class="sub">Ability</td><td>血量归零且未骑乘时触发：0.5 秒内回复 50 HP，攻速只剩 50%，5 秒后阵亡。冷却 15</td><td class="f"><span class="b">bFireAntLastStand</span></td></tr>
+<tr><td>Last laugh 临死一击</td><td class="cost">300</td><td class="sub">Ability</td><td>血量归零且未骑乘时触发：造成 20 毒伤。冷却 60</td><td class="f"><span class="b">bFireAntLastLaugh</span></td></tr>
+</table>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>移动速度</td><td>每点 +2</td><td class="f"><span class="i">FireAntMovementSpeedImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>范围抗性</td><td>每点 +1%</td><td class="f"><span class="i">FireAntAOEResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>穿刺</td><td>每点 +0.5%</td><td class="f"><span class="i">FireAntPiercingImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>普攻伤害</td><td>每点 +0.05</td><td class="f"><span class="i">FireAntAttackDamageImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+<p class="sub">等级上限字段：<span class="f">FireAntMaxUpgradeLevel</span></p>
+</div>
+<div class="unit">
+<h3>马塔贝勒医疗蚁<small>Matabele ant medic</small></h3>
+<p class="meta"><b>解锁/升级花费：</b>解锁 Lv1 = 800；升级 Lv2 = 90，Lv3 = 100</p>
+<div class="tagrow"><span class="tag">存档开关：bMatabeleAnt / bMatabeleAntVariant / bMatabeleAntSoldier</span></div>
+<p class="yjbadge">★ 你已加点：移动速度 <b>+10 点</b>（每点 +2 = <b>+20</b>）→ 生效值 <b>340</b><br>★ 你已加点：物理抗性 <b>+10 点</b>（每点 +0.5% = <b>+5%</b>）→ 生效值 <b>5%</b><br>★ 你已加点：骑乘伤害 <b>+10 点</b>（每点 +0.05 = <b>+0.5</b>） —— 这几项属技能/特殊攻击表，不在下面这张基础属性表里 ｜ <a href="#ngp-eff">看详细推导 →</a></p>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">MatabeleMedicAnesthetist1</small></td><td>90</td><td>3</td><td>1</td><td>320</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>14</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">MatabeleMedicAnesthetist2</small></td><td>105</td><td>4.5</td><td>1</td><td>320</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>17</td><td>400</td><td>16</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">MatabeleMedicAnesthetist3</small></td><td>120</td><td>6</td><td>1</td><td>320</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>20</td><td>400</td><td>18</td></tr>
+</table></div>
+<p class="sub">麻醉师型。快速响应型移速 400/410/420、Lv3 多 40% 脱战闪避</p>
+<table><tr><th>适应性（4 选 2）</th><th>花费</th><th>类型</th><th>效果</th><th>存档字段（Bool）</th></tr>
+<tr><td>Sustain 维持</td><td class="cost">400</td><td class="sub">Effect</td><td>未骑乘时每次攻击后治疗半径 250 内友军 3 HP</td><td class="f"><span class="b">bMatabeleAntSustain</span></td></tr>
+<tr><td>Preserve 保全</td><td class="cost">400</td><td class="sub">Ability</td><td>半径 250 内友军脱战回血速度 +1 HP/秒，最多叠 5 层</td><td class="f"><span class="b">bMatabeleAntPreserve</span></td></tr>
+<tr><td>Field medic 战地医疗</td><td class="cost">600</td><td class="sub">Stat</td><td>拾取阵亡蚂蚁 5 秒后立刻复活它</td><td class="f"><span class="b">bMatabeleAntFieldMedic</span></td></tr>
+<tr><td>Surgeon 外科医生</td><td class="cost">600</td><td class="sub">Stat</td><td>被复活的蚂蚁保留 85% 生命与伤害（配合 Field medic）</td><td class="f"><span class="b">bMatabeleAntSurgeon</span></td></tr>
+</table>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>移动速度</td><td>每点 +2</td><td class="f"><span class="i">MatabeleAntMovementSpeedImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>物理抗性</td><td>每点 +0.5%</td><td class="f"><span class="i">MatabeleAntPhysicalResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>毒抗</td><td>每点 +0.5%</td><td class="f"><span class="i">MatabeleAntVenomResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>骑乘伤害</td><td>每点 +0.05</td><td class="f"><span class="i">MatabeleAntAttackDamageImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+<p class="sub">等级上限字段：<span class="f">MatabeleAntMaxUpgradeLevel</span></p>
+</div>
+<div class="unit">
+<h3>子弹蚁兵<small>Bullet ant soldier</small></h3>
+<p class="meta"><b>解锁/升级花费：</b>仅解锁 Lv3 = 2000</p>
+<div class="tagrow"><span class="tag">存档开关：bBulletAnt（单位解锁）</span></div>
+<p class="yjbadge">★ 你已加点：穿刺 <b>+20 点</b>（每点 +0.5% = <b>+10%</b>）→ 生效值 <b>10%</b> ｜ <a href="#ngp-eff">看详细推导 →</a></p>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">BulletAnt1</small></td><td>450</td><td>50</td><td>1</td><td>400</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>300</td><td>0.1</td><td>2</td><td>16</td><td>450</td><td>30</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">BulletAnt2</small></td><td>600</td><td>65</td><td>1</td><td>400</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>300</td><td>0.15</td><td>2</td><td>16</td><td>460</td><td>42</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">BulletAnt3</small></td><td>750</td><td>80</td><td>1</td><td>400</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>300</td><td>0.2</td><td>2</td><td>16</td><td>470</td><td>54</td></tr>
+</table></div>
+<table><tr><th>适应性（4 选 2）</th><th>花费</th><th>类型</th><th>效果</th><th>存档字段（Bool）</th></tr>
+<tr><td>Lean pupation 精简羽化</td><td class="cost">600</td><td class="sub">Stat</td><td>孵化花费 -100</td><td class="f"><span class="b">bBulletAntLeanPupation</span></td></tr>
+<tr><td>Fast recovery 快速恢复</td><td class="cost">600</td><td class="sub">Stat</td><td>治疗速度 +10</td><td class="f"><span class="b">bBulletAntFastRecovery</span></td></tr>
+<tr><td>Reinforced carapace 强化甲壳</td><td class="cost">700</td><td class="sub">Stat</td><td>护甲 +1</td><td class="f"><span class="b">bBulletAntReinforcedCarapace</span></td></tr>
+<tr><td>Sealed carapace 密封甲壳</td><td class="cost">700</td><td class="sub">Stat</td><td>毒抗 +50%</td><td class="f"><span class="b">bBulletAntSealedCarapace</span></td></tr>
+</table>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>生命</td><td>每点 +3</td><td class="f"><span class="i">BulletAntHealthImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>穿刺</td><td>每点 +0.5%</td><td class="f"><span class="i">BulletAntPiercingImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>单次最大受伤</td><td>每点 -2</td><td class="f"><span class="i">BulletAntMaxSingleDamageImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>处决伤害</td><td>每点 +2</td><td class="f"><span class="i">BulletAntAttackDamageImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+<p class="sub">等级上限字段：<span class="f">BulletAntMaxUpgradeLevel</span></p>
+</div>
+<div class="unit">
+<h3>爆炸蚁小兵<small>Exploding ant minor soldier</small></h3>
+<p class="meta"><b>解锁/升级花费：</b>解锁 Lv1 = 800；升级 Lv2 = 90，Lv3 = 100</p>
+<div class="tagrow"><span class="tag">存档开关：bExplodingAntSoldier（单位解锁）</span></div>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">ExplodingAntSoldier1</small></td><td>45</td><td>3</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>50</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>10</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">ExplodingAntSoldier2</small></td><td>56</td><td>4</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>50</td><td>0.2</td><td>2</td><td>15</td><td>400</td><td>14</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">ExplodingAntSoldier3</small></td><td>67</td><td>5</td><td>1</td><td>450</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>50</td><td>0.3</td><td>2</td><td>15</td><td>400</td><td>19</td></tr>
+</table></div>
+<table><tr><th>适应性（4 选 2）</th><th>花费</th><th>类型</th><th>效果</th><th>存档字段（Bool）</th></tr>
+<tr><td>Controlled blast 可控爆破</td><td class="cost">400</td><td class="sub">Stat</td><td>爆炸伤害 +50%；毒液分泌伤害 +50%</td><td class="f"><span class="b">bExplodingAntSoldierControlledBlast</span></td></tr>
+<tr><td>Violent blast 剧烈爆破</td><td class="cost">400</td><td class="sub">Stat</td><td>爆炸半径 +50%；毒液分泌半径 +50%</td><td class="f"><span class="b">bExplodingAntSoldierViolentBlast</span></td></tr>
+<tr><td>Chain reaction 连锁反应</td><td class="cost">600</td><td class="sub">Effect</td><td>爆炸使附近爆炸蚁小兵的爆炸伤害 +20%，可叠加</td><td class="f"><span class="b">bExplodingAntSoldierChainReaction</span></td></tr>
+<tr><td>Persistent secretions 持久分泌</td><td class="cost">600</td><td class="sub">Effect</td><td>爆炸在地面留下毒液，半径 200，每秒造成相当于爆炸伤害 12.5% 的毒伤，持续 4 秒</td><td class="f"><span class="b">bExplodingAntSoldierPersistentSecretions</span></td></tr>
+</table>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>毒抗</td><td>每点 +0.5%</td><td class="f"><span class="i">ExplodingAntSoldierVenomResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>穿刺</td><td>每点 +0.5%</td><td class="f"><span class="i">ExplodingAntSoldierPiercingImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>单次最大受伤</td><td>每点 -2</td><td class="f"><span class="i">ExplodingAntSoldierMaxDamageTakenImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>普攻伤害</td><td>每点 +0.05</td><td class="f"><span class="i">ExplodingAntSoldierAttackDamageImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+<p class="sub">等级上限字段：<span class="f">ExplodingAntSoldierMaxUpgradeLevel</span></p>
+</div>
+<div class="unit">
+<h3>爆炸白蚁工<small>Exploding termite worker</small></h3>
+<p class="meta"><b>解锁/升级花费：</b>解锁 Lv1 = 500；升级 Lv2 = 70，Lv3 = 80</p>
+<div class="tagrow"><span class="tag">存档开关：bExplodingTermiteWorker（单位解锁）</span></div>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">ExplodingTermiteWorker1</small></td><td>30</td><td>0.4</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>5</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">ExplodingTermiteWorker2</small></td><td>40</td><td>0.5</td><td>1</td><td>340</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>4</td><td>15</td><td>400</td><td>7</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">ExplodingTermiteWorker3</small></td><td>50</td><td>0.6</td><td>1</td><td>380</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>6</td><td>35</td><td>400</td><td>9</td></tr>
+</table></div>
+<table><tr><th>适应性（4 选 2）</th><th>花费</th><th>类型</th><th>效果</th><th>存档字段（Bool）</th></tr>
+<tr><td>Rapid maturity 快速成熟</td><td class="cost">300</td><td class="sub">Stat</td><td>成熟时间 -50%</td><td class="f"><span class="b">bExplodingTermiteWorkerRapidMaturity</span></td></tr>
+<tr><td>Accelerated gland filling 加速腺体充能</td><td class="cost">300</td><td class="sub">Stat</td><td>最大增益时间 -50%</td><td class="f"><span class="b">bExplodingTermiteWorkerRapidGladFilling</span></td></tr>
+<tr><td>Extreme toxins 极限毒素</td><td class="cost">400</td><td class="sub">Stat</td><td>持续伤害时长 +50%</td><td class="f"><span class="b">bExplodingTermiteWorkerExtremeToxins</span></td></tr>
+<tr><td>Extreme confusion 极限混乱</td><td class="cost">400</td><td class="sub">Stat</td><td>混乱时长 +50%</td><td class="f"><span class="b">bExplodingTermiteWorkerExtremeConfusion</span></td></tr>
+</table>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>生命</td><td>每点 +1</td><td class="f"><span class="i">ExplodingTermiteWorkerHealthImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>移动速度</td><td>每点 +2</td><td class="f"><span class="i">ExplodingTermiteWorkerMovementSpeedImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>护甲</td><td>每点 +0.1</td><td class="f"><span class="i">ExplodingTermiteWorkerArmourImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>脱战闪避</td><td>每点 +0.5%</td><td class="f"><span class="i">ExplodingTermiteWorkerOutOfCombatEvasionImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+<p class="sub">等级上限字段：<span class="f">ExplodingTermiteWorkerMaxUpgradeLevel</span></p>
+</div>
+<h2 class="sec" id="sec2">二、进阶单位（只有 Lv3 解锁 + 属性微调，无适应性）</h2>
+<div class="unit">
+<h3>木蚁兵（近战型）<small>Wood ant soldier</small></h3>
+<p class="meta"><b>解锁花费：</b>仅解锁 Lv3 = 120</p>
+<div class="tagrow"><span class="tag">存档开关：bWoodAntMelee</span></div>
+<p class="yjbadge">★ 你已加点：生命 <b>+30 点</b>（每点 +1 = <b>+30</b>）→ 生效值 Lv1 <b>115</b> / Lv2 <b>130</b> / Lv3 <b>150</b> ｜ <a href="#ngp-eff">看详细推导 →</a></p>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">WoodAntMelee1</small></td><td>85</td><td>0.6</td><td>1</td><td>320</td><td>0.2</td><td>0%</td><td>0%</td><td>30%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>8</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">WoodAntMelee2</small></td><td>100</td><td>1.2</td><td>1</td><td>320</td><td>0.4</td><td>10%</td><td>0%</td><td>30%</td><td>0%</td><td>0%</td><td>不限</td><td>0.2</td><td>2</td><td>15</td><td>400</td><td>12</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">WoodAntMelee3</small></td><td>120</td><td>1.8</td><td>1</td><td>320</td><td>0.6</td><td>20%</td><td>0%</td><td>30%</td><td>0%</td><td>0%</td><td>不限</td><td>0.3</td><td>2</td><td>15</td><td>400</td><td>18</td></tr>
+</table></div>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>生命</td><td>每点 +1</td><td class="f"><span class="i">WoodAntMeleeHealthImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>范围抗性</td><td>每点 +1%</td><td class="f"><span class="i">WoodAntMeleeAOEResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>物理抗性</td><td>每点 +0.5%</td><td class="f"><span class="i">WoodAntMeleePhysicalResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>毒抗</td><td>每点 +0.5%</td><td class="f"><span class="i">WoodAntMeleeVenomResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+</div>
+<div class="unit">
+<h3>切叶蚁中工<small>Leafcutter ant media</small></h3>
+<p class="meta"><b>解锁花费：</b>仅解锁 Lv3 = 240</p>
+<div class="tagrow"><span class="tag">存档开关：bLeafcutterMedia</span></div>
+<p class="yjbadge">★ 你已加点：普攻伤害 <b>+85 点</b>（每点 +0.05 = <b>+4.25</b>）→ 生效值 Lv1 <b>8.75</b> / Lv2 <b>10.25</b> / Lv3 <b>11.25</b> ｜ <a href="#ngp-eff">看详细推导 →</a></p>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">LeafcutterMedia1</small></td><td>100</td><td>4.5</td><td>1</td><td>310</td><td>0.2</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>20%</td><td>不限</td><td>0.1</td><td>2</td><td>17</td><td>400</td><td>22</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">LeafcutterMedia2</small></td><td>115</td><td>6</td><td>1</td><td>320</td><td>0.4</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>30%</td><td>不限</td><td>0.2</td><td>2</td><td>19</td><td>400</td><td>25</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">LeafcutterMedia3</small></td><td>130</td><td>7</td><td>1.3</td><td>330</td><td>0.8</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>40%</td><td>不限</td><td>0.3</td><td>2</td><td>22</td><td>400</td><td>37</td></tr>
+</table></div>
+<p class="sub">自定义模式差异：Lv1 生命：战役 100 → 自定义 80；Lv1 普攻伤害：战役 4.5 → 自定义 4；Lv1 搬运上限：战役 17 → 自定义 20；Lv2 生命：战役 115 → 自定义 95；Lv2 普攻伤害：战役 6 → 自定义 5；Lv2 搬运上限：战役 19 → 自定义 24；Lv3 生命：战役 130 → 自定义 110；Lv3 普攻伤害：战役 7 → 自定义 6；Lv3 搬运上限：战役 22 → 自定义 30</p>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>生命</td><td>每点 +0.8</td><td class="f"><span class="i">LeafcutterMediaHealthImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>护甲</td><td>每点 +0.1</td><td class="f"><span class="i">LeafcutterMediaArmourImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>穿刺</td><td>每点 +0.5%</td><td class="f"><span class="i">LeafcutterMediaPiercingImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>普攻伤害</td><td>每点 +0.05</td><td class="f"><span class="i">LeafcutterMediaAttackDamageImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+</div>
+<div class="unit">
+<h3>马塔贝勒兵蚁<small>Matabele ant soldier</small></h3>
+<p class="meta"><b>解锁花费：</b>仅解锁 Lv3 = 600</p>
+<div class="tagrow"><span class="tag">存档开关：bMatabeleAntSoldier</span></div>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">MatabeleSoldier1</small></td><td>200</td><td>12</td><td>1</td><td>340</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>16</td><td>450</td><td>30</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">MatabeleSoldier2</small></td><td>220</td><td>15</td><td>1</td><td>340</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>16</td><td>460</td><td>42</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">MatabeleSoldier3</small></td><td>300</td><td>19</td><td>1</td><td>340</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>16</td><td>470</td><td>54</td></tr>
+</table></div>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>生命</td><td>每点 +1</td><td class="f"><span class="i">MatabeleSoldierHealthImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>移动速度</td><td>每点 +2</td><td class="f"><span class="i">MatabeleSoldierMovementSpeedImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>普攻伤害</td><td>每点 +0.05</td><td class="f"><span class="i">MatabeleSoldierAttackDamageImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>普攻攻速</td><td>每点 +0.3%</td><td class="f"><span class="i">MatabeleSoldierAttackSpeedImprovement</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+</div>
+<div class="unit">
+<h3>白蚁小兵<small>Termite minor soldier</small></h3>
+<p class="meta"><b>解锁花费：</b>仅解锁 Lv3 = 400</p>
+<div class="tagrow"><span class="tag">存档开关：bTermiteSoldier</span></div>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">TermiteSoldier1</small></td><td>70</td><td>3</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>20%</td><td>不限</td><td>0.1</td><td>2</td><td>6</td><td>400</td><td>12</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">TermiteSoldier2</small></td><td>80</td><td>4</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>20%</td><td>不限</td><td>0.1</td><td>2</td><td>8</td><td>400</td><td>16</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">TermiteSoldier3</small></td><td>90</td><td>5</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>20%</td><td>不限</td><td>0.1</td><td>2</td><td>10</td><td>400</td><td>20</td></tr>
+</table></div>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>生命</td><td>每点 +0.5</td><td class="f"><span class="i">TermiteMinorSoldierHealthImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>物理抗性</td><td>每点 +0.5%</td><td class="f"><span class="i">TermiteMinorSoldierPhysicalResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>穿刺</td><td>每点 +0.5%</td><td class="f"><span class="i">TermiteMinorSoldierPiercingImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>普攻伤害</td><td>每点 +0.05</td><td class="f"><span class="i">TermiteMinorSoldierAttackDamageImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+</div>
+<div class="unit">
+<h3>白蚁大兵<small>Termite major soldier</small></h3>
+<p class="meta"><b>解锁花费：</b>仅解锁 Lv3 = 600</p>
+<div class="tagrow"><span class="tag">存档开关：bTermiteMajorSoldier</span></div>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">TermiteMajorSoldier1</small></td><td>140</td><td>5</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>20%</td><td>不限</td><td>0.1</td><td>2</td><td>8</td><td>400</td><td>22</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">TermiteMajorSoldier2</small></td><td>160</td><td>6</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>20%</td><td>不限</td><td>0.1</td><td>2</td><td>10</td><td>400</td><td>27</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">TermiteMajorSoldier3</small></td><td>190</td><td>7</td><td>1</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>20%</td><td>不限</td><td>0.1</td><td>2</td><td>12</td><td>400</td><td>29</td></tr>
+</table></div>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>移动速度</td><td>每点 +2</td><td class="f"><span class="i">TermiteMajorSoldierMovementSpeedImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>骑乘伤害</td><td>每点 +0.05</td><td class="f"><span class="i">TermiteMajorSoldierAttackDamageImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>物理抗性</td><td>每点 +0.5%</td><td class="f"><span class="i">TermiteMajorSoldierPhysicalResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>毒抗</td><td>每点 +0.5%</td><td class="f"><span class="i">TermiteMajorSoldierVenomResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+</div>
+<div class="unit">
+<h3>爆炸蚁大兵<small>Exploding ant major soldier</small></h3>
+<p class="meta"><b>解锁花费：</b>仅解锁 Lv3 = 500</p>
+<div class="tagrow"><span class="tag">存档开关：bExplodingAntMajorSoldier</span></div>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">ExplodingAntMajorSoldier1</small></td><td>100</td><td>4</td><td>1</td><td>310</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.1</td><td>2</td><td>20</td><td>400</td><td>12</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">ExplodingAntMajorSoldier2</small></td><td>115</td><td>4.5</td><td>1</td><td>320</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.2</td><td>2</td><td>24</td><td>400</td><td>14</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">ExplodingAntMajorSoldier3</small></td><td>130</td><td>5</td><td>1</td><td>330</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>不限</td><td>0.3</td><td>2</td><td>30</td><td>400</td><td>16</td></tr>
+</table></div>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>生命</td><td>每点 +1</td><td class="f"><span class="i">ExplodingAntMajorSoldierHealthImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>移动速度</td><td>每点 +2</td><td class="f"><span class="i">ExplodingAntMajorSoldierMovementSpeedImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>物理抗性</td><td>每点 +0.5%</td><td class="f"><span class="i">ExplodingAntMajorSoldierPhysicalResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>普攻攻速</td><td>每点 +0.3%</td><td class="f"><span class="i">ExplodingAntMajorSoldierAttackSpeedImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+</div>
+<div class="unit">
+<h3>爆炸白蚁兵<small>Exploding termite soldier</small></h3>
+<p class="meta"><b>解锁花费：</b>仅解锁 Lv3 = 500</p>
+<div class="tagrow"><span class="tag">存档开关：bExplodingTermiteSoldier</span></div>
+<p class="stathead">当前游戏数值（Lv1 / Lv2 / Lv3）</p>
+<div class="scroll"><table class="tbl2">
+<tr><th class="lv">等级</th><th>生命</th><th>普攻伤害</th><th>攻速系数</th><th>移速</th><th>护甲</th><th>物抗</th><th>毒抗</th><th>AOE抗</th><th>闪避</th><th>穿刺</th><th>单次最大受伤</th><th>回血/秒</th><th>挖掘量</th><th>搬运上限</th><th>视野半径</th><th>点数</th></tr>
+<tr><td class="lv"><span>Lv1</span><br><small class="f">ExplodingTermiteSoldier1</small></td><td>95</td><td>6</td><td>0.7</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>20%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>14</td></tr>
+<tr><td class="lv"><span>Lv2</span><br><small class="f">ExplodingTermiteSoldier2</small></td><td>110</td><td>7.5</td><td>0.7</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>20%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>16</td></tr>
+<tr><td class="lv"><span>Lv3</span><br><small class="f">ExplodingTermiteSoldier3</small></td><td>125</td><td>9</td><td>0.7</td><td>300</td><td>0</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td>20%</td><td>不限</td><td>0.1</td><td>2</td><td>15</td><td>400</td><td>18</td></tr>
+</table></div>
+<table><tr><th>可微调属性（IP）</th><th>每点效果</th><th>存档字段（Int）</th><th>值域</th></tr>
+<tr><td>移动速度</td><td>每点 +2</td><td class="f"><span class="i">ExplodingTermiteSoldierMovementSpeedImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>物理抗性</td><td>每点 +0.5%</td><td class="f"><span class="i">ExplodingTermiteSoldierPhysicalResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>毒抗</td><td>每点 +0.5%</td><td class="f"><span class="i">ExplodingTermiteSoldierVenomResistanceImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+<tr><td>普攻伤害</td><td>每点 +0.05</td><td class="f"><span class="i">ExplodingTermiteSoldierAttackDamageImprovment</span></td><td class="sub">0 ~ 上限（可自定义）</td></tr>
+</table>
+</div>
+<footer>单文件合并版 ｜ 总表：本机游戏文件 + 官方 wiki 交叉验证 ｜ 你的存档部分：本机 <code>Colony1.sav</code> / <code>Colony1LevelData.sav</code> 实测</footer>
+</div></body></html>

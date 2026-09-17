@@ -1,0 +1,131 @@
+﻿数据表行名,CSV列名,等级,官方值,出处
+# TrapjawAnt（陷阱颚蚁兵）：官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier；成本 90 [6],,,,wiki 原话：Damage modifications None、Immunities None；Attack speed 1.5/1.5/1.5（显示值）
+# SlaveMakerAnt（奴役蚁兵）：官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier；成本 65 [5],,,,wiki 原话：Damage modifications None、Immunities None；Attack speed 1.5/1.8/2.2（显示值）。同页奴役蚁-偷卵者 SlaverAnt1 未被 mod 改动
+# LittleBlackAnt（小黑蚁兵）：官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier；成本 24 [2],,,,wiki 原话：Damage modifications 只有 Area resistance 20%/20%/20%、Immunities None；Attack speed 1.5/1.5/2.5（显示值）。⚠️ 同页「Little black ant worker（工蚁）」是另一档：生命 25/35/45、伤害 0.6/0.8/1、移速 300/340/380、点数 5/8/12 —— 数据表里只有一组 LittleBlackAnt1/2/3，按兵蚁口径收录（与 mod 拿它改造成兵蚁一致）
+TrapjawAnt1,Health,Lv1,65,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,Health,Lv2,75,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,Health,Lv3,90,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,AttackDamage,Lv1,6,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,AttackDamage,Lv2,8,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,AttackDamage,Lv3,11,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,AttackSpeed,Lv1,1,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,AttackSpeed,Lv2,1,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,AttackSpeed,Lv3,1,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,Speed,Lv1,320,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,Speed,Lv2,320,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,Speed,Lv3,320,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,FoodCarryMax,Lv1,15,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,FoodCarryMax,Lv2,15,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,FoodCarryMax,Lv3,15,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,HealthPerSecond,Lv1,0.1,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,HealthPerSecond,Lv2,0.1,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,HealthPerSecond,Lv3,0.1,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,TargetRadius,Lv1,400,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,TargetRadius,Lv2,400,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,TargetRadius,Lv3,400,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,PointValue,Lv1,14,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,PointValue,Lv2,20,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,PointValue,Lv3,24,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,Armour,Lv1,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,Armour,Lv2,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,Armour,Lv3,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,PhysicalResist,Lv1,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,PhysicalResist,Lv2,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,PhysicalResist,Lv3,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,VenomResist,Lv1,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,VenomResist,Lv2,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,VenomResist,Lv3,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,AOEResist,Lv1,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,AOEResist,Lv2,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,AOEResist,Lv3,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,Evasion,Lv1,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,Evasion,Lv2,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,Evasion,Lv3,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt1,Piercing,Lv1,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt2,Piercing,Lv2,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+TrapjawAnt3,Piercing,Lv3,0,官方 wiki「Trap-jaw Ant」→ Notable stats → Trap-jaw ant soldier
+SlaveMakerAnt1,Health,Lv1,50,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,Health,Lv2,80,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,Health,Lv3,120,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,AttackDamage,Lv1,3,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,AttackDamage,Lv2,4.4,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,AttackDamage,Lv3,7,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,AttackSpeed,Lv1,1,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,AttackSpeed,Lv2,1.2,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,AttackSpeed,Lv3,1.46667,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,Speed,Lv1,280,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,Speed,Lv2,300,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,Speed,Lv3,320,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,FoodCarryMax,Lv1,15,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,FoodCarryMax,Lv2,15,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,FoodCarryMax,Lv3,15,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,HealthPerSecond,Lv1,0.1,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,HealthPerSecond,Lv2,0.15,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,HealthPerSecond,Lv3,0.2,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,TargetRadius,Lv1,400,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,TargetRadius,Lv2,400,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,TargetRadius,Lv3,400,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,PointValue,Lv1,15,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,PointValue,Lv2,18,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,PointValue,Lv3,22,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,Armour,Lv1,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,Armour,Lv2,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,Armour,Lv3,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,PhysicalResist,Lv1,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,PhysicalResist,Lv2,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,PhysicalResist,Lv3,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,VenomResist,Lv1,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,VenomResist,Lv2,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,VenomResist,Lv3,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,AOEResist,Lv1,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,AOEResist,Lv2,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,AOEResist,Lv3,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,Evasion,Lv1,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,Evasion,Lv2,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,Evasion,Lv3,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt1,Piercing,Lv1,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt2,Piercing,Lv2,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+SlaveMakerAnt3,Piercing,Lv3,0,官方 wiki「Slave-maker Ant」→ Notable stats → Slave-maker ant soldier
+LittleBlackAnt1,Health,Lv1,25,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,Health,Lv2,30,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,Health,Lv3,40,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,AttackDamage,Lv1,1.5,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,AttackDamage,Lv2,2,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,AttackDamage,Lv3,3,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,AttackSpeed,Lv1,1,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,AttackSpeed,Lv2,1,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,AttackSpeed,Lv3,1.66667,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,Speed,Lv1,300,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,Speed,Lv2,300,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,Speed,Lv3,300,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,FoodCarryMax,Lv1,15,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,FoodCarryMax,Lv2,15,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,FoodCarryMax,Lv3,15,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,HealthPerSecond,Lv1,0.1,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,HealthPerSecond,Lv2,0.1,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,HealthPerSecond,Lv3,0.1,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,TargetRadius,Lv1,400,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,TargetRadius,Lv2,400,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,TargetRadius,Lv3,400,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,PointValue,Lv1,5,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,PointValue,Lv2,7,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,PointValue,Lv3,10,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,Armour,Lv1,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,Armour,Lv2,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,Armour,Lv3,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,PhysicalResist,Lv1,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,PhysicalResist,Lv2,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,PhysicalResist,Lv3,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,VenomResist,Lv1,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,VenomResist,Lv2,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,VenomResist,Lv3,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,AOEResist,Lv1,0.2,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,AOEResist,Lv2,0.2,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,AOEResist,Lv3,0.2,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,Evasion,Lv1,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,Evasion,Lv2,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,Evasion,Lv3,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt1,Piercing,Lv1,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt2,Piercing,Lv2,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+LittleBlackAnt3,Piercing,Lv3,0,官方 wiki「Little Black Ant」→ Notable stats → Little black ant soldier
+# 未覆盖,,,,DigAmmount（挖掘量）；MaxSingleDamage（单次最大受伤） —— 官方 wiki 的 Notable stats 没有公布，本表保留来源 mod 的值，网页里会标注

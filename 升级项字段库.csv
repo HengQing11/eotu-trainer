@@ -1,0 +1,137 @@
+﻿字段名,类型,单位中文,单位英文,数据表行前缀,项目中文,每点效果,数值表列,数据来源,备注
+QueenHealthImprovment,IP微调,蚁后,Queen,Queen,生命,每点 +10,Health,wiki Formicarium Adaptation（每点效果）,
+QueenCDImprovment,IP微调,蚁后,Queen,Queen,技能冷却,每点 -0.5 秒,,wiki Formicarium Adaptation（每点效果）,技能冷却在 Abilities 技能表，不在 CreatureStats 里
+WorkerSpeedImprovment,IP微调,工蚁,Worker,WorkerAnt,移动速度,每点 +2,Speed,wiki Formicarium Adaptation（每点效果）,
+WorkerHarvestImprovment,IP微调,工蚁,Worker,WorkerAnt,搬运量,每点 +0.4,FoodCarryMax,wiki Formicarium Adaptation（每点效果）,
+BlackAntHealthImprovment,IP微调,黑蚁兵,Black ant soldier,BlackAnt,生命,每点 +0.7,Health,wiki Formicarium Adaptation（每点效果）,
+BlackAntArmourImprovment,IP微调,黑蚁兵,Black ant soldier,BlackAnt,护甲,每点 +0.1,Armour,wiki Formicarium Adaptation（每点效果）,
+BlackAntPiercingImprovment,IP微调,黑蚁兵,Black ant soldier,BlackAnt,穿刺,每点 +0.5%,Piercing,wiki Formicarium Adaptation（每点效果）,
+BlackAntAttackImprovment,IP微调,黑蚁兵,Black ant soldier,BlackAnt,普攻伤害,每点 +0.05,AttackDamage,wiki Formicarium Adaptation（每点效果）,
+WoodAntHealthImprovment,IP微调,木蚁射手,Wood ant shooter,WoodAntA,生命,每点 +0.5,Health,wiki Formicarium Adaptation（每点效果）,
+WoodAntRangeImprovment,IP微调,木蚁射手,Wood ant shooter,WoodAntA,射程,每点 +2,,wiki Formicarium Adaptation（每点效果）,射程不体现在 CreatureStats 表的展示列里
+WoodAntAttackDamageImprovment,IP微调,木蚁射手,Wood ant shooter,WoodAntA,酸液伤害,每点 +0.08（迫击）/ +0.02（速射）,,wiki Formicarium Adaptation（每点效果）,酸液伤害属技能（Abilities 表）
+WoodAntAttackSpeedImprovment,IP微调,木蚁射手,Wood ant shooter,WoodAntA,酸液攻速,每点 +0.4%,,wiki Formicarium Adaptation（每点效果）,酸液攻速属技能（Abilities 表）
+LeafcutterHealthImprovment,IP微调,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt,生命,每点 +1,Health,wiki Formicarium Adaptation（每点效果）,与震晕型（Stun）数值完全相同
+LeafcutterPhysicalResImprovment,IP微调,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt,物理抗性,每点 +0.5%,PhysicalResist,wiki Formicarium Adaptation（每点效果）,
+LeafcutterVenomResImprovment,IP微调,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt,毒抗,每点 +0.5%,VenomResist,wiki Formicarium Adaptation（每点效果）,
+LeafcutterAttackSpeedImprovment,IP微调,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt,普攻攻速,每点 +0.3%,AttackSpeed,wiki Formicarium Adaptation（每点效果）,
+FireAntMovementSpeedImprovment,IP微调,火蚁兵,Fire ant soldier,FireAntVigorous,移动速度,每点 +2,Speed,wiki Formicarium Adaptation（每点效果）,
+FireAntAOEResistanceImprovment,IP微调,火蚁兵,Fire ant soldier,FireAntVigorous,范围抗性,每点 +1%,AOEResist,wiki Formicarium Adaptation（每点效果）,
+FireAntPiercingImprovment,IP微调,火蚁兵,Fire ant soldier,FireAntVigorous,穿刺,每点 +0.5%,Piercing,wiki Formicarium Adaptation（每点效果）,
+FireAntAttackDamageImprovment,IP微调,火蚁兵,Fire ant soldier,FireAntVigorous,普攻伤害,每点 +0.05,AttackDamage,wiki Formicarium Adaptation（每点效果）,
+MatabeleAntMovementSpeedImprovment,IP微调,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist,移动速度,每点 +2,Speed,wiki Formicarium Adaptation（每点效果）,
+MatabeleAntPhysicalResistanceImprovment,IP微调,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist,物理抗性,每点 +0.5%,PhysicalResist,wiki Formicarium Adaptation（每点效果）,
+MatabeleAntVenomResistanceImprovment,IP微调,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist,毒抗,每点 +0.5%,VenomResist,wiki Formicarium Adaptation（每点效果）,
+MatabeleAntAttackDamageImprovment,IP微调,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist,骑乘伤害,每点 +0.05,,wiki Formicarium Adaptation（每点效果）,骑乘是特殊攻击形态，数值不在 CreatureStats 表
+BulletAntHealthImprovment,IP微调,子弹蚁兵,Bullet ant soldier,BulletAnt,生命,每点 +3,Health,wiki Formicarium Adaptation（每点效果）,
+BulletAntPiercingImprovment,IP微调,子弹蚁兵,Bullet ant soldier,BulletAnt,穿刺,每点 +0.5%,Piercing,wiki Formicarium Adaptation（每点效果）,
+BulletAntMaxSingleDamageImprovment,IP微调,子弹蚁兵,Bullet ant soldier,BulletAnt,单次最大受伤,每点 -2,MaxSingleDamage,wiki Formicarium Adaptation（每点效果）,
+BulletAntAttackDamageImprovment,IP微调,子弹蚁兵,Bullet ant soldier,BulletAnt,处决伤害,每点 +2,,wiki Formicarium Adaptation（每点效果）,处决是特殊攻击，数值不在 CreatureStats 表
+ExplodingAntSoldierVenomResistanceImprovment,IP微调,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier,毒抗,每点 +0.5%,VenomResist,wiki Formicarium Adaptation（每点效果）,
+ExplodingAntSoldierPiercingImprovment,IP微调,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier,穿刺,每点 +0.5%,Piercing,wiki Formicarium Adaptation（每点效果）,
+ExplodingAntSoldierMaxDamageTakenImprovment,IP微调,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier,单次最大受伤,每点 -2,MaxSingleDamage,wiki Formicarium Adaptation（每点效果）,
+ExplodingAntSoldierAttackDamageImprovment,IP微调,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier,普攻伤害,每点 +0.05,AttackDamage,wiki Formicarium Adaptation（每点效果）,
+ExplodingTermiteWorkerHealthImprovment,IP微调,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker,生命,每点 +1,Health,wiki Formicarium Adaptation（每点效果）,
+ExplodingTermiteWorkerMovementSpeedImprovment,IP微调,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker,移动速度,每点 +2,Speed,wiki Formicarium Adaptation（每点效果）,
+ExplodingTermiteWorkerArmourImprovment,IP微调,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker,护甲,每点 +0.1,Armour,wiki Formicarium Adaptation（每点效果）,
+ExplodingTermiteWorkerOutOfCombatEvasionImprovment,IP微调,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker,脱战闪避,每点 +0.5%,Evasion,wiki Formicarium Adaptation（每点效果）,
+WoodAntMeleeHealthImprovment,IP微调,木蚁兵（近战型）,Wood ant soldier,WoodAntMelee,生命,每点 +1,Health,wiki Formicarium Adaptation（每点效果）,
+WoodAntMeleeAOEResistanceImprovment,IP微调,木蚁兵（近战型）,Wood ant soldier,WoodAntMelee,范围抗性,每点 +1%,AOEResist,wiki Formicarium Adaptation（每点效果）,
+WoodAntMeleePhysicalResistanceImprovment,IP微调,木蚁兵（近战型）,Wood ant soldier,WoodAntMelee,物理抗性,每点 +0.5%,PhysicalResist,wiki Formicarium Adaptation（每点效果）,
+WoodAntMeleeVenomResistanceImprovment,IP微调,木蚁兵（近战型）,Wood ant soldier,WoodAntMelee,毒抗,每点 +0.5%,VenomResist,wiki Formicarium Adaptation（每点效果）,
+LeafcutterMediaHealthImprovment,IP微调,切叶蚁中工,Leafcutter ant media,LeafcutterMedia,生命,每点 +0.8,Health,wiki Formicarium Adaptation（每点效果）,
+LeafcutterMediaArmourImprovment,IP微调,切叶蚁中工,Leafcutter ant media,LeafcutterMedia,护甲,每点 +0.1,Armour,wiki Formicarium Adaptation（每点效果）,
+LeafcutterMediaPiercingImprovment,IP微调,切叶蚁中工,Leafcutter ant media,LeafcutterMedia,穿刺,每点 +0.5%,Piercing,wiki Formicarium Adaptation（每点效果）,
+LeafcutterMediaAttackDamageImprovment,IP微调,切叶蚁中工,Leafcutter ant media,LeafcutterMedia,普攻伤害,每点 +0.05,AttackDamage,wiki Formicarium Adaptation（每点效果）,
+MatabeleSoldierHealthImprovment,IP微调,马塔贝勒兵蚁,Matabele ant soldier,MatabeleSoldier,生命,每点 +1,Health,wiki Formicarium Adaptation（每点效果）,
+MatabeleSoldierMovementSpeedImprovment,IP微调,马塔贝勒兵蚁,Matabele ant soldier,MatabeleSoldier,移动速度,每点 +2,Speed,wiki Formicarium Adaptation（每点效果）,
+MatabeleSoldierAttackDamageImprovment,IP微调,马塔贝勒兵蚁,Matabele ant soldier,MatabeleSoldier,普攻伤害,每点 +0.05,AttackDamage,wiki Formicarium Adaptation（每点效果）,
+MatabeleSoldierAttackSpeedImprovement,IP微调,马塔贝勒兵蚁,Matabele ant soldier,MatabeleSoldier,普攻攻速,每点 +0.3%,AttackSpeed,wiki Formicarium Adaptation（每点效果）,
+TermiteMinorSoldierHealthImprovment,IP微调,白蚁小兵,Termite minor soldier,TermiteSoldier,生命,每点 +0.5,Health,wiki Formicarium Adaptation（每点效果）,
+TermiteMinorSoldierPhysicalResistanceImprovment,IP微调,白蚁小兵,Termite minor soldier,TermiteSoldier,物理抗性,每点 +0.5%,PhysicalResist,wiki Formicarium Adaptation（每点效果）,
+TermiteMinorSoldierPiercingImprovment,IP微调,白蚁小兵,Termite minor soldier,TermiteSoldier,穿刺,每点 +0.5%,Piercing,wiki Formicarium Adaptation（每点效果）,
+TermiteMinorSoldierAttackDamageImprovment,IP微调,白蚁小兵,Termite minor soldier,TermiteSoldier,普攻伤害,每点 +0.05,AttackDamage,wiki Formicarium Adaptation（每点效果）,
+TermiteMajorSoldierMovementSpeedImprovment,IP微调,白蚁大兵,Termite major soldier,TermiteMajorSoldier,移动速度,每点 +2,Speed,wiki Formicarium Adaptation（每点效果）,
+TermiteMajorSoldierAttackDamageImprovment,IP微调,白蚁大兵,Termite major soldier,TermiteMajorSoldier,骑乘伤害,每点 +0.05,,wiki Formicarium Adaptation（每点效果）,骑乘是特殊攻击形态，数值不在 CreatureStats 表
+TermiteMajorSoldierPhysicalResistanceImprovment,IP微调,白蚁大兵,Termite major soldier,TermiteMajorSoldier,物理抗性,每点 +0.5%,PhysicalResist,wiki Formicarium Adaptation（每点效果）,
+TermiteMajorSoldierVenomResistanceImprovment,IP微调,白蚁大兵,Termite major soldier,TermiteMajorSoldier,毒抗,每点 +0.5%,VenomResist,wiki Formicarium Adaptation（每点效果）,
+ExplodingAntMajorSoldierHealthImprovment,IP微调,爆炸蚁大兵,Exploding ant major soldier,ExplodingAntMajorSoldier,生命,每点 +1,Health,wiki Formicarium Adaptation（每点效果）,
+ExplodingAntMajorSoldierMovementSpeedImprovment,IP微调,爆炸蚁大兵,Exploding ant major soldier,ExplodingAntMajorSoldier,移动速度,每点 +2,Speed,wiki Formicarium Adaptation（每点效果）,
+ExplodingAntMajorSoldierPhysicalResistanceImprovment,IP微调,爆炸蚁大兵,Exploding ant major soldier,ExplodingAntMajorSoldier,物理抗性,每点 +0.5%,PhysicalResist,wiki Formicarium Adaptation（每点效果）,
+ExplodingAntMajorSoldierAttackSpeedImprovment,IP微调,爆炸蚁大兵,Exploding ant major soldier,ExplodingAntMajorSoldier,普攻攻速,每点 +0.3%,AttackSpeed,wiki Formicarium Adaptation（每点效果）,
+ExplodingTermiteSoldierMovementSpeedImprovment,IP微调,爆炸白蚁兵,Exploding termite soldier,ExplodingTermiteSoldier,移动速度,每点 +2,Speed,wiki Formicarium Adaptation（每点效果）,
+ExplodingTermiteSoldierPhysicalResistanceImprovment,IP微调,爆炸白蚁兵,Exploding termite soldier,ExplodingTermiteSoldier,物理抗性,每点 +0.5%,PhysicalResist,wiki Formicarium Adaptation（每点效果）,
+ExplodingTermiteSoldierVenomResistanceImprovment,IP微调,爆炸白蚁兵,Exploding termite soldier,ExplodingTermiteSoldier,毒抗,每点 +0.5%,VenomResist,wiki Formicarium Adaptation（每点效果）,
+ExplodingTermiteSoldierAttackDamageImprovment,IP微调,爆炸白蚁兵,Exploding termite soldier,ExplodingTermiteSoldier,普攻伤害,每点 +0.05,AttackDamage,wiki Formicarium Adaptation（每点效果）,
+bGeneTheifQueenSecondWind,适应性,蚁后,Queen,Queen,Second wind 二次风,,,wiki + 本机存档 Bool 字段,
+bGeneTheifQueenFierceMother,适应性,蚁后,Queen,Queen,Fierce mother 狂暴母体,,,wiki + 本机存档 Bool 字段,
+bGeneTheifQueenStrongCarpiece,适应性,蚁后,Queen,Queen,（wiki 名：Royal guard 皇家卫兵）,,,wiki + 本机存档 Bool 字段,
+bGeneTheifQueenResistantCarpiece,适应性,蚁后,Queen,Queen,（wiki 名：Royal decree 皇家敕令）,,,wiki + 本机存档 Bool 字段,
+bGeneTheifWorkerStrongMandibles,适应性,工蚁,Worker,WorkerAnt,Nimble 敏捷,,,wiki + 本机存档 Bool 字段,
+bGeneTheifWorkerStrongCarpiece,适应性,工蚁,Worker,WorkerAnt,Defensive 防御,,,wiki + 本机存档 Bool 字段,
+bGeneTheifWorkerAggressiveBrood,适应性,工蚁,Worker,WorkerAnt,Aggressive brood 好斗虫群,,,wiki + 本机存档 Bool 字段,
+bGeneTheifWorkerEfficientBrood,适应性,工蚁,Worker,WorkerAnt,Efficient brood 高效虫群,,,wiki + 本机存档 Bool 字段,
+bBlackAntDangerous,适应性,黑蚁兵,Black ant soldier,BlackAnt,Dangerous 危险,,,wiki + 本机存档 Bool 字段,
+bBlackAntMeatWall,适应性,黑蚁兵,Black ant soldier,BlackAnt,Meat wall 肉盾,,,wiki + 本机存档 Bool 字段,
+bBlackAntSelfPreservation,适应性,黑蚁兵,Black ant soldier,BlackAnt,Self preservation 自保,,,wiki + 本机存档 Bool 字段,
+bBlackAntSelfRepair,适应性,黑蚁兵,Black ant soldier,BlackAnt,Self repair 自修,,,wiki + 本机存档 Bool 字段,
+bBlackAnt,解锁开关,黑蚁兵,Black ant soldier,BlackAnt,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bWoodAntCorrosive,适应性,木蚁射手,Wood ant shooter,WoodAntA,Corrosive 腐蚀,,,wiki + 本机存档 Bool 字段,
+bWoodAntHighPressure,适应性,木蚁射手,Wood ant shooter,WoodAntA,High pressure 高压,,,wiki + 本机存档 Bool 字段,
+bWoodAntCrippling,适应性,木蚁射手,Wood ant shooter,WoodAntA,Crippling 致残,,,wiki + 本机存档 Bool 字段,
+bWoodAntWeakening,适应性,木蚁射手,Wood ant shooter,WoodAntA,Weakening 弱化,,,wiki + 本机存档 Bool 字段,
+bWoodAnt,解锁开关,木蚁射手,Wood ant shooter,WoodAntA,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bWoodAntMelee,解锁开关,木蚁兵（近战型）,Wood ant soldier,WoodAntMelee,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bWoodAntVarient,解锁开关,木蚁射手,Wood ant shooter,WoodAntA,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bLeafcutterDurable,适应性,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt,Durable 坚韧,,,wiki + 本机存档 Bool 字段,
+bLeafcutterShockProof,适应性,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt,Shockproof 抗震,,,wiki + 本机存档 Bool 字段,
+bLeafcutterSharp,适应性,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt,Sharp 锋利,,,wiki + 本机存档 Bool 字段,
+bLeafcutterResilient,适应性,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt,Resilient 恢复,,,wiki + 本机存档 Bool 字段,
+bLeafcutterMedia,解锁开关,切叶蚁中工,Leafcutter ant media,LeafcutterMedia,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bLeafcutterMajor,解锁开关,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bLeafcutterVarient,解锁开关,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bLeafcutterSuperMajor,解锁开关,切叶蚁大工,Leafcutter ant major,LeafcutterMajorTaunt,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bFireAntSurefooted,适应性,火蚁兵,Fire ant soldier,FireAntVigorous,Surefooted 稳足,,,wiki + 本机存档 Bool 字段,
+bFireAntEvasive,适应性,火蚁兵,Fire ant soldier,FireAntVigorous,Evasive 闪避,,,wiki + 本机存档 Bool 字段,
+bFireAntLastStand,适应性,火蚁兵,Fire ant soldier,FireAntVigorous,Last stand 背水一战,,,wiki + 本机存档 Bool 字段,
+bFireAntLastLaugh,适应性,火蚁兵,Fire ant soldier,FireAntVigorous,Last laugh 临死一击,,,wiki + 本机存档 Bool 字段,
+bFireAnt,解锁开关,火蚁兵,Fire ant soldier,FireAntVigorous,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bFireAntVarient,解锁开关,火蚁兵,Fire ant soldier,FireAntVigorous,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bMatabeleAntSustain,适应性,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist,Sustain 维持,,,wiki + 本机存档 Bool 字段,
+bMatabeleAntPreserve,适应性,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist,Preserve 保全,,,wiki + 本机存档 Bool 字段,
+bMatabeleAntFieldMedic,适应性,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist,Field medic 战地医疗,,,wiki + 本机存档 Bool 字段,
+bMatabeleAntSurgeon,适应性,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist,Surgeon 外科医生,,,wiki + 本机存档 Bool 字段,
+bMatabeleAnt,解锁开关,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bMatabeleAntVariant,解锁开关,马塔贝勒医疗蚁,Matabele ant medic,MatabeleMedicAnesthetist,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bMatabeleAntSoldier,解锁开关,马塔贝勒兵蚁,Matabele ant soldier,MatabeleSoldier,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bBulletAntLeanPupation,适应性,子弹蚁兵,Bullet ant soldier,BulletAnt,Lean pupation 精简羽化,,,wiki + 本机存档 Bool 字段,
+bBulletAntFastRecovery,适应性,子弹蚁兵,Bullet ant soldier,BulletAnt,Fast recovery 快速恢复,,,wiki + 本机存档 Bool 字段,
+bBulletAntReinforcedCarapace,适应性,子弹蚁兵,Bullet ant soldier,BulletAnt,Reinforced carapace 强化甲壳,,,wiki + 本机存档 Bool 字段,
+bBulletAntSealedCarapace,适应性,子弹蚁兵,Bullet ant soldier,BulletAnt,Sealed carapace 密封甲壳,,,wiki + 本机存档 Bool 字段,
+bBulletAnt,解锁开关,子弹蚁兵,Bullet ant soldier,BulletAnt,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bExplodingAntSoldierControlledBlast,适应性,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier,Controlled blast 可控爆破,,,wiki + 本机存档 Bool 字段,
+bExplodingAntSoldierViolentBlast,适应性,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier,Violent blast 剧烈爆破,,,wiki + 本机存档 Bool 字段,
+bExplodingAntSoldierChainReaction,适应性,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier,Chain reaction 连锁反应,,,wiki + 本机存档 Bool 字段,
+bExplodingAntSoldierPersistentSecretions,适应性,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier,Persistent secretions 持久分泌,,,wiki + 本机存档 Bool 字段,
+bExplodingAntSoldier,解锁开关,爆炸蚁小兵,Exploding ant minor soldier,ExplodingAntSoldier,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bExplodingTermiteWorkerRapidMaturity,适应性,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker,Rapid maturity 快速成熟,,,wiki + 本机存档 Bool 字段,
+bExplodingTermiteWorkerRapidGladFilling,适应性,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker,Accelerated gland filling 加速腺体充能,,,wiki + 本机存档 Bool 字段,
+bExplodingTermiteWorkerExtremeToxins,适应性,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker,Extreme toxins 极限毒素,,,wiki + 本机存档 Bool 字段,
+bExplodingTermiteWorkerExtremeConfusion,适应性,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker,Extreme confusion 极限混乱,,,wiki + 本机存档 Bool 字段,
+bExplodingTermiteWorker,解锁开关,爆炸白蚁工,Exploding termite worker,ExplodingTermiteWorker,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bTermiteSoldier,解锁开关,白蚁小兵,Termite minor soldier,TermiteSoldier,单位/变体解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bTermiteMajorSoldier,解锁开关,白蚁大兵,Termite major soldier,TermiteMajorSoldier,单位/变体解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bExplodingAntMajorSoldier,解锁开关,爆炸蚁大兵,Exploding ant major soldier,ExplodingAntMajorSoldier,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bExplodingTermiteSoldier,解锁开关,爆炸白蚁兵,Exploding termite soldier,ExplodingTermiteSoldier,单位/变体解锁,,,wiki + 本机存档 Bool 字段,解锁该单位可用，不是蚁皇浆升级项
+bSlaveMaker,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bTrapjaw,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bArmyAnt,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bArmyAntMajor,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bBigHeadedMajor,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bBigHeadedSuperSoldier,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bLittleBlackAnt,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bTermiteMajorWorker,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bDriverAntWorker,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bDriverAntSoldier,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bDriverAntLargeSoldier,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
+bStinkAnt,解锁开关,（非蚁巢物种）,,,物种解锁,,,wiki + 本机存档 Bool 字段,自定义局面可用，不是蚁皇浆升级项
